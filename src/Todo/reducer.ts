@@ -13,7 +13,10 @@ const todosSlice = createSlice({
       state.push({ id, title, description, completed: false, parentTaskId: null, childrenTaskIds:[] })
     },
     deleteTodo(state, action) {
-
+        const todoIndex = state.findIndex(todo => todo.id === action.payload.id)
+        if ( todoIndex >= 0 ) {
+            state.splice(todoIndex, 1)
+        }
     },
     updateTodo(state, action) {
 
