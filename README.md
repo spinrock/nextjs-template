@@ -12,8 +12,8 @@ This is Next.js TypeScript Template
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-npx create-next-app <yout-app-name> --example <This Repository Url>
+npx create-next-app <yout-app-name> --example https://github.com/spinrock/nextjs-template
 # or
-yarn create next-app <yout-app-name> --example <This Repository Url>
+yarn create next-app <yout-app-name> --example https://github.com/spinrock/nextjs-template
 ```
 
