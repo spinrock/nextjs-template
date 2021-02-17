@@ -214,7 +214,19 @@ describe('updateTodo Test', () => {
       type: updateTodo.type, 
       payload: {
         id: todo02.id,
-        childrenTaskIds: todo01.id
+        childrenTaskIds: [todo00.id, todo01.id]
+      }
+    })).toEqual(expected)
+  })
+
+  it('Update childrenTaskId (update [] value)', () => {
+    const actual = [todo00, todo01, {...todo02, childrenTaskIds: [todo00.id, todo01.id]}]
+    const expected = [todo00, todo01, todo02]
+    expect(reducer(actual, {
+      type: updateTodo.type, 
+      payload: {
+        id: todo02.id,
+        childrenTaskIds: []
       }
     })).toEqual(expected)
   })
@@ -236,7 +248,7 @@ describe('updateTodo Test', () => {
 
   it('Update null value', () => {
     const actual = [todo00, todo01, {...todo02, parentTaskId: todo00.id, childrenTaskIds:[todo01.id]}]
-    const expected = [todo00, todo01, todo02]
+    const expected = [todo00, todo01, {...todo02, childrenTaskIds:[todo01.id]}]
     expect(reducer(actual, {
       type: updateTodo.type, 
       payload: {
