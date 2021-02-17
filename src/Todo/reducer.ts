@@ -19,6 +19,14 @@ const todosSlice = createSlice({
         }
     },
     updateTodo(state, action) {
+      const {id, title, description, parentTaskId, childrenTaskIds} = action.payload
+      const todo = state.find(todo => todo.id === id)
+      if (todo) {
+        todo.title = title ? title : todo.title
+        todo.description = description ? description : todo.description
+        todo.parentTaskId = (parentTaskId || parentTaskId === null) ? parentTaskId : todo.parentTaskId
+        todo.childrenTaskIds = childrenTaskIds ? childrenTaskIds : todo.childrenTaskIds
+      }
 
     },
     toggleTodo(state, action) {
