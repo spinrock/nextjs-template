@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { Todo } from './interface'
+import { sampleTodoList } from './sampleData'
 
-const initialState: Todo[] = []
+const initialState: Todo[] = sampleTodoList
 
 const todosSlice = createSlice({
   name: 'todos',
