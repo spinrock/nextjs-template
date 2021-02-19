@@ -1,11 +1,10 @@
-# NextJS Typescript 
+# NextJS Typescript
 
 This is Next.js TypeScript Template
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
-
 
 ## How to use
 
@@ -16,4 +15,3 @@ npx create-next-app <yout-app-name> --example https://github.com/spinrock/nextjs
 # or
 yarn create next-app <yout-app-name> --example https://github.com/spinrock/nextjs-template
 ```
-

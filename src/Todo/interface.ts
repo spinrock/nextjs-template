@@ -1,8 +1,8 @@
 export interface Todo {
-  id: string,
-  title: string,
-  description: string,
-  completed: boolean,
-  parentTaskId: string,
+  id: string
+  title: string
+  description: string
+  completed: boolean
+  parentTaskId: string
   childrenTaskIds: string[]
 }
