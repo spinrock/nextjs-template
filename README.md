@@ -1,10 +1,13 @@
-# NextJS Typescript
+# NextJS Template
 
 This is Next.js TypeScript Template
+
+## Tech Stack
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Material-UI](https://material-ui.com/ja/)
 
 ## How to use
 
