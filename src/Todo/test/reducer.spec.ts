@@ -5,6 +5,8 @@ import reducer, {
   deleteTodo,
   updateTodo,
 } from '../reducer'
+import uuid from 'uuid/v4'
+jest.mock('uuid/v4')
 
 // Sample DataSet
 const todo00: Todo = {
@@ -39,11 +41,12 @@ describe('addTodo Test', () => {
     const actual: Todo[] = []
     const expected: Todo[] = [todo00]
 
+    uuid.mockReturnValue(todo00.id)
+
     expect(
       reducer(actual, {
         type: addTodo.type,
         payload: {
-          id: todo00.id,
           title: todo00.title,
           description: todo00.description,
         },
@@ -55,11 +58,12 @@ describe('addTodo Test', () => {
     const actual: Todo[] = [todo00]
     const expected: Todo[] = [todo00, todo01]
 
+    uuid.mockReturnValue(todo01.id)
+
     expect(
       reducer(actual, {
         type: addTodo.type,
         payload: {
-          id: todo01.id,
           title: todo01.title,
           description: todo01.description,
         },
