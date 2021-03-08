@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import uuid from 'uuid/v4'
+import { v4 } from 'uuid'
 import { Todo } from './interface'
 import { sampleTodoList } from './sampleData'
 
@@ -13,7 +13,7 @@ const todosSlice = createSlice({
       const { title, description } = action.payload
       // createSliceがImmerのラップ関数のため、mutableな関数を実行しても問題ない
       state.push({
-        id: uuid(),
+        id: v4(),
         title,
         description,
         completed: false,
