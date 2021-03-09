@@ -12,73 +12,193 @@ exports[`Home page matches snapshot 1`] = `
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root"
+          class="MuiCardContent-root makeStyles-cardContent-2"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
+            style="text-decoration-line: blink;"
           >
             TechStack
           </h5>
           <p
             class="MuiTypography-root MuiTypography-body1"
+            style="text-decoration-line: blink;"
           >
             describe below TechStack
           </p>
         </div>
+        <span
+          aria-disabled="false"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <input
+              class="PrivateSwitchBase-input-7"
+              data-indeterminate="false"
+              type="checkbox"
+              value="false"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </span>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root"
+          class="MuiCardContent-root makeStyles-cardContent-2"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
+            style="text-decoration-line: blink;"
           >
             Next.js
           </h5>
           <p
             class="MuiTypography-root MuiTypography-body1"
+            style="text-decoration-line: blink;"
           >
             React Framework
           </p>
         </div>
+        <span
+          aria-disabled="false"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <input
+              class="PrivateSwitchBase-input-7"
+              data-indeterminate="false"
+              type="checkbox"
+              value="false"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </span>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root"
+          class="MuiCardContent-root makeStyles-cardContent-2"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
+            style="text-decoration-line: blink;"
           >
             Redux Toolkit
           </h5>
           <p
             class="MuiTypography-root MuiTypography-body1"
+            style="text-decoration-line: blink;"
           >
             Statement Management
           </p>
         </div>
+        <span
+          aria-disabled="false"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <input
+              class="PrivateSwitchBase-input-7"
+              data-indeterminate="false"
+              type="checkbox"
+              value="false"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </span>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root"
+          class="MuiCardContent-root makeStyles-cardContent-2"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
+            style="text-decoration-line: blink;"
           >
             Material-UI
           </h5>
           <p
             class="MuiTypography-root MuiTypography-body1"
+            style="text-decoration-line: blink;"
           >
             UI Framework
           </p>
         </div>
+        <span
+          aria-disabled="false"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <input
+              class="PrivateSwitchBase-input-7"
+              data-indeterminate="false"
+              type="checkbox"
+              value="false"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </span>
       </div>
     </ul>
     <button
