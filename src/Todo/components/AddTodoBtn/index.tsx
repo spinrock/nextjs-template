@@ -1,25 +1,31 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import React, { useState } from 'react'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
-import { addTodo } from '../../reducer'
+import CreateTodoDialog from './components/CreateTodoDialog'
 
 const AddTodoBtn: React.FC = () => {
-  const dispatch = useDispatch()
+  const [dialogStatus, setDialogStatus] = useState(false)
 
-  const addTodoFunc = () => {
-    dispatch(addTodo({ title: 'test' }))
+  const openDialog: VoidFunction = () => {
+    setDialogStatus(true)
+  }
+
+  const closeDialog: VoidFunction = () => {
+    setDialogStatus(false)
   }
 
   return (
-    <Fab
-      color="primary"
-      variant="extended"
-      aria-label="add"
-      onClick={addTodoFunc}
-    >
-      <AddIcon />
-    </Fab>
+    <div>
+      <Fab
+        color="primary"
+        variant="extended"
+        aria-label="add"
+        onClick={openDialog}
+      >
+        <AddIcon />
+      </Fab>
+      <CreateTodoDialog open={dialogStatus} closeDialog={closeDialog} />
+    </div>
   )
 }
 
