@@ -56,7 +56,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
           {todo.description}
         </Typography>
       </CardContent>
-      <CheckBox value={todo.completed} onChange={toggleTodoFunc} />
+      <CheckBox checked={todo.completed} onChange={toggleTodoFunc} />
     </Card>
   )
 }
