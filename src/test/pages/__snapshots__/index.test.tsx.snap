@@ -9,10 +9,42 @@ exports[`Home page matches snapshot 1`] = `
       class="MuiList-root MuiList-padding"
     >
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiBox-root MuiBox-root-3 makeStyles-selectComponent-1"
       >
         <div
-          class="MuiCardContent-root makeStyles-cardContent-2"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-2"
+        >
+          <div
+            aria-haspopup="listbox"
+            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+            role="button"
+            tabindex="0"
+          >
+            Incompleted
+          </div>
+          <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput"
+            tabindex="-1"
+            value="Incompleted"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSelect-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardContent-root makeStyles-cardContent-5"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
@@ -29,16 +61,16 @@ exports[`Home page matches snapshot 1`] = `
         </div>
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-7"
+              class="PrivateSwitchBase-input-10"
               data-indeterminate="false"
               type="checkbox"
-              value="false"
+              value=""
             />
             <svg
               aria-hidden="true"
@@ -57,10 +89,10 @@ exports[`Home page matches snapshot 1`] = `
         </span>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root makeStyles-cardContent-2"
+          class="MuiCardContent-root makeStyles-cardContent-5"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
@@ -77,16 +109,16 @@ exports[`Home page matches snapshot 1`] = `
         </div>
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-7"
+              class="PrivateSwitchBase-input-10"
               data-indeterminate="false"
               type="checkbox"
-              value="false"
+              value=""
             />
             <svg
               aria-hidden="true"
@@ -105,10 +137,10 @@ exports[`Home page matches snapshot 1`] = `
         </span>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root makeStyles-cardContent-2"
+          class="MuiCardContent-root makeStyles-cardContent-5"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
@@ -125,16 +157,16 @@ exports[`Home page matches snapshot 1`] = `
         </div>
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-7"
+              class="PrivateSwitchBase-input-10"
               data-indeterminate="false"
               type="checkbox"
-              value="false"
+              value=""
             />
             <svg
               aria-hidden="true"
@@ -153,10 +185,10 @@ exports[`Home page matches snapshot 1`] = `
         </span>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-1 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root makeStyles-cardContent-2"
+          class="MuiCardContent-root makeStyles-cardContent-5"
         >
           <h5
             class="MuiTypography-root MuiTypography-h5"
@@ -173,16 +205,16 @@ exports[`Home page matches snapshot 1`] = `
         </div>
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-7"
+              class="PrivateSwitchBase-input-10"
               data-indeterminate="false"
               type="checkbox"
-              value="false"
+              value=""
             />
             <svg
               aria-hidden="true"
