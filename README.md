@@ -1,20 +1,25 @@
 # NextJS Template
 
-This is Next.js TypeScript Template
+Next.js with Typescript の個人用テンプレートとなります
 
-## Tech Stack
-
+## 利用しているライブラリ群
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Material-UI](https://material-ui.com/ja/)
 
-## How to use
+## 使い方
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) の --exampleオプションに本リポジトリURLを指定します
 
 ```bash
 npx create-next-app <yout-app-name> --example https://github.com/spinrock/nextjs-template
 # or
 yarn create next-app <yout-app-name> --example https://github.com/spinrock/nextjs-template
 ```
+
+## サンプルイメージ
+- PCサイズの場合  
+<img src="./README_IMG/PC_IMG.png" >
+- スマホサイズの場合  
+<img src="./README_IMG/SP_IMG.png" width="375" height="812" >
