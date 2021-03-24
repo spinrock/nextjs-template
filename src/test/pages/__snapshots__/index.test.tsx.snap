@@ -43,22 +43,6 @@ exports[`Home page matches snapshot 1`] = `
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
-        <div
-          class="MuiCardContent-root makeStyles-cardContent-5"
-        >
-          <h5
-            class="MuiTypography-root MuiTypography-h5"
-            style="text-decoration-line: blink;"
-          >
-            TechStack
-          </h5>
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-            style="text-decoration-line: blink;"
-          >
-            describe below TechStack
-          </p>
-        </div>
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
@@ -87,26 +71,61 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root"
           />
         </span>
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiCardContent-root makeStyles-cardContent-5"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+              style="text-decoration-line: blink;"
+            >
+              TechStack
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap"
+              style="text-decoration-line: blink;"
+            >
+              describe below TechStack
+            </p>
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight"
+          />
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
-        <div
-          class="MuiCardContent-root makeStyles-cardContent-5"
-        >
-          <h5
-            class="MuiTypography-root MuiTypography-h5"
-            style="text-decoration-line: blink;"
-          >
-            Next.js
-          </h5>
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-            style="text-decoration-line: blink;"
-          >
-            React Framework
-          </p>
-        </div>
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
@@ -135,26 +154,61 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root"
           />
         </span>
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiCardContent-root makeStyles-cardContent-5"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+              style="text-decoration-line: blink;"
+            >
+              Next.js
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap"
+              style="text-decoration-line: blink;"
+            >
+              React Framework
+            </p>
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight"
+          />
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
-        <div
-          class="MuiCardContent-root makeStyles-cardContent-5"
-        >
-          <h5
-            class="MuiTypography-root MuiTypography-h5"
-            style="text-decoration-line: blink;"
-          >
-            Redux Toolkit
-          </h5>
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-            style="text-decoration-line: blink;"
-          >
-            Statement Management
-          </p>
-        </div>
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
@@ -183,26 +237,61 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root"
           />
         </span>
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiCardContent-root makeStyles-cardContent-5"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+              style="text-decoration-line: blink;"
+            >
+              Redux Toolkit
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap"
+              style="text-decoration-line: blink;"
+            >
+              Statement Management
+            </p>
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight"
+          />
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </div>
       <div
         class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
       >
-        <div
-          class="MuiCardContent-root makeStyles-cardContent-5"
-        >
-          <h5
-            class="MuiTypography-root MuiTypography-h5"
-            style="text-decoration-line: blink;"
-          >
-            Material-UI
-          </h5>
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-            style="text-decoration-line: blink;"
-          >
-            UI Framework
-          </p>
-        </div>
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
@@ -231,6 +320,57 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root"
           />
         </span>
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiCardContent-root makeStyles-cardContent-5"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5"
+              style="text-decoration-line: blink;"
+            >
+              Material-UI
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap"
+              style="text-decoration-line: blink;"
+            >
+              UI Framework
+            </p>
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight"
+          />
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </div>
     </ul>
     <div>
