@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CommonPageTemplate from '../components/CommonPageTemplate'
 import theme from '../styles/theme'
-import store from '../store'
+import store from '../rootStore'
 import PropTypes from 'prop-types'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
