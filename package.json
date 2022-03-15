@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "npm run lint && npm run type-check && npm run test"
+    "test-all": "npm run lint && npm run type-check && npm run test",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -36,6 +37,7 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "12.1.4",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.26",
