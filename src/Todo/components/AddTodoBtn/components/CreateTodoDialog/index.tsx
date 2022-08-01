@@ -1,19 +1,17 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { makeStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogTitle from '@material-ui/core/DialogTitle'
-import DialogContent from '@material-ui/core/DialogContent'
-import TextField from '@material-ui/core/TextField'
-import { addTodo } from '../../../../reducer'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { styled } from '@material-ui/styles';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+import TextField from '@material-ui/core/TextField';
+import { addTodo } from '../../../../reducer';
 
-const useStyles = makeStyles({
-  dialogContent: {
-    display: 'grid',
-  },
-})
+const StyledDialogContent = styled(DialogContent)(() => ({
+  display: 'grid',
+}));
 
 type Props = {
   open: boolean
@@ -21,10 +19,9 @@ type Props = {
 }
 
 const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
-  const classes = useStyles()
-  const dispatch = useDispatch()
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
 
   const addTodoFunc: VoidFunction = () => {
     dispatch(addTodo({ title: title, description: description }))
@@ -36,7 +33,7 @@ const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
   return (
     <Dialog onClose={closeDialog} open={open}>
       <DialogTitle>Please Input Todo Property</DialogTitle>
-      <DialogContent className={classes.dialogContent}>
+      <StyledDialogContent>
         <TextField
           error={title == ''}
           label="Title"
@@ -52,7 +49,7 @@ const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
             setDescription(e.target.value)
           }}
         />
-      </DialogContent>
+      </StyledDialogContent>
       <DialogActions>
         <Button
           onClick={addTodoFunc}
@@ -67,7 +64,7 @@ const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
         </Button>
       </DialogActions>
     </Dialog>
-  )
+  );
 }
 
-export default CreateTodoDialog
+export default CreateTodoDialog;
