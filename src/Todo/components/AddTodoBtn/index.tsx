@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
 import CreateTodoDialog from './components/CreateTodoDialog';
 
 const AddTodoBtn: React.FC = () => {

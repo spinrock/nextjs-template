@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import List from '@material-ui/core/List';
+import List from '@mui/material/List';
 import { Todo } from '../../interface';
 import TodoFilter from './components/TodoFilter';
 import TodoItem from './components/TodoItem';
