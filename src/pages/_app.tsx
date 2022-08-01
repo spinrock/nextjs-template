@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { Provider } from 'react-redux'
 import Head from 'next/head'
-import { ThemeProvider } from '@material-ui/core/styles'
+import { ThemeProvider } from '@mui/material/styles'
 import CommonPageTemplate from '../components/CommonPageTemplate'
 import theme from '../styles/theme'
 import store from '../rootStore'
 import PropTypes from 'prop-types'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import CssBaseline from '@mui/material/CssBaseline'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props

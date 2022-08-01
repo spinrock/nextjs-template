@@ -1,8 +1,8 @@
 import React from 'react'
-import { styled } from '@material-ui/core/styles'
-import Box from '@material-ui/core/Box'
-import MenuItem from '@material-ui/core/MenuItem'
-import Select from '@material-ui/core/Select'
+import { styled } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import MenuItem from '@mui/material/MenuItem'
+import Select from '@mui/material/Select'
 import theme from '../../../../styles/theme'
 
 const menuItemList = [
