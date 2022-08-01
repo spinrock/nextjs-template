@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
-const StyledContainer = styled(Container)((theme) => ({
+const StyledContainer = styled(Container)(() => ({
   height: '40px',
   borderTop: '1px solid #eaeaea',
   display: 'flex',
