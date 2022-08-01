@@ -1,32 +1,26 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Box from '@material-ui/core/Box'
-import Container from '@material-ui/core/Container'
-import theme from '../../styles/theme'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react';
+import { styled } from '@material-ui/styles';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+import Header from './Header';
+import Footer from './Footer';
 
-const useStyles = makeStyles({
-  container: {
-    padding: 0,
-  },
-  main: {
-    paddingTop: theme.spacing(7.5), // padding AppBar Space
-  },
-})
+const StyledContainer = styled(Container)(() => ({
+  padding: 0,
+}));
 
-const CommonPageTemplate: React.FC = ({ children }) => {
-  const classes = useStyles()
+const StyledBox = styled(Box)(() => ({
+  paddingTop: '60px',
+}));
 
-  return (
-    <Container className={classes.container}>
-      <Header title="This is Next.js Template" />
-      <Box m={0} className={classes.main}>
-        {children}
-      </Box>
-      <Footer />
-    </Container>
-  )
-}
+const CommonPageTemplate: React.FC = ({ children }) => (
+  <StyledContainer>
+    <Header title="This is Next.js Template" />
+    <StyledBox m={0}>
+      {children}
+    </StyledBox>
+    <Footer />
+  </StyledContainer>
+);
 
-export default CommonPageTemplate
+export default CommonPageTemplate;
