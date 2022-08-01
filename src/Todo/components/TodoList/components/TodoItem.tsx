@@ -1,54 +1,48 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
-import { makeStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardContent from '@material-ui/core/CardContent'
-import CheckBox from '@material-ui/core/Checkbox'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { styled } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CheckBox from '@material-ui/core/Checkbox';
 import DeleteIcon from '@material-ui/icons/Delete';
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
-import theme from '../../../../styles/theme'
-import { Todo } from '../../../interface'
-import { toggleTodo, deleteTodo } from '../../../reducer'
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import theme from '../../../../styles/theme';
+import { Todo } from '../../../interface';
+import { toggleTodo, deleteTodo } from '../../../reducer';
 
-const useStyles = makeStyles({
-  todoItem: {
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
-    height: theme.spacing(10),
-    display: 'flex',
-  },
-  cardContent: {
-    width: '90%',
-  },
-  checkBox: {
-    width: '10%',
-  },
-})
+const StyledCard = styled(Card)(() => ({
+  marginTop: theme.spacing(2),
+  marginBottom: theme.spacing(2),
+  height: theme.spacing(10),
+  display: 'flex',
+}));
+
+const StyledCardContent = styled(CardContent)(() => ({
+  width: '90%',
+}));
 
 type Props = {
   todo: Todo
 }
 
 const TodoItem: React.FC<Props> = ({ todo }: Props) => {
-  const classes = useStyles()
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const toggleTodoFunc = () => {
     dispatch(toggleTodo({ id: todo.id }))
-  }
+  };
 
   const deleteTodoFunc = () => {
     dispatch(deleteTodo({ id: todo.id }))
-  }
+  };
 
   return (
-    <Card className={classes.todoItem}>
+    <StyledCard>
       <CheckBox checked={todo.completed} onChange={toggleTodoFunc} />
-      <CardActionArea
-      >
-        <CardContent className={classes.cardContent}>
+      <CardActionArea>
+        <StyledCardContent>
           <Typography
             variant="h5"
             style={{
@@ -66,15 +60,15 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
           >
             {todo.description}
           </Typography>
-        </CardContent>
+        </StyledCardContent>
       </CardActionArea>
       <IconButton
         onClick={deleteTodoFunc}
       >
         <DeleteIcon />
       </IconButton>
-    </Card>
-  )
+    </StyledCard>
+  );
 }
 
-export default TodoItem
+export default TodoItem;
