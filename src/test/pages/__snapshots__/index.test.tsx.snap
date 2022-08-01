@@ -9,10 +9,10 @@ exports[`Home page matches snapshot 1`] = `
       class="MuiList-root MuiList-padding"
     >
       <div
-        class="MuiBox-root MuiBox-root-3 makeStyles-selectComponent-1"
+        class="MuiBox-root MuiBox-root-3 Styled(MuiBox)-root-1 Styled(MuiBox)-root-2"
       >
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-2"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline WithStyles(ForwardRef(Select))-root-4 WithStyles(ForwardRef(Select))-root-5"
         >
           <div
             aria-haspopup="listbox"
@@ -41,17 +41,17 @@ exports[`Home page matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root-6 WithStyles(ForwardRef(Card))-root-7 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-10"
+              class="PrivateSwitchBase-input-11"
               data-indeterminate="false"
               type="checkbox"
               value=""
@@ -77,7 +77,7 @@ exports[`Home page matches snapshot 1`] = `
           type="button"
         >
           <div
-            class="MuiCardContent-root makeStyles-cardContent-5"
+            class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root-12 WithStyles(ForwardRef(CardContent))-root-13"
           >
             <h5
               class="MuiTypography-root MuiTypography-h5"
@@ -124,17 +124,17 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root-6 WithStyles(ForwardRef(Card))-root-14 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-10"
+              class="PrivateSwitchBase-input-11"
               data-indeterminate="false"
               type="checkbox"
               value=""
@@ -160,7 +160,7 @@ exports[`Home page matches snapshot 1`] = `
           type="button"
         >
           <div
-            class="MuiCardContent-root makeStyles-cardContent-5"
+            class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root-12 WithStyles(ForwardRef(CardContent))-root-15"
           >
             <h5
               class="MuiTypography-root MuiTypography-h5"
@@ -207,17 +207,17 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root-6 WithStyles(ForwardRef(Card))-root-16 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-10"
+              class="PrivateSwitchBase-input-11"
               data-indeterminate="false"
               type="checkbox"
               value=""
@@ -243,7 +243,7 @@ exports[`Home page matches snapshot 1`] = `
           type="button"
         >
           <div
-            class="MuiCardContent-root makeStyles-cardContent-5"
+            class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root-12 WithStyles(ForwardRef(CardContent))-root-17"
           >
             <h5
               class="MuiTypography-root MuiTypography-h5"
@@ -290,17 +290,17 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-todoItem-4 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root-6 WithStyles(ForwardRef(Card))-root-18 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <span
           aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
         >
           <span
             class="MuiIconButton-label"
           >
             <input
-              class="PrivateSwitchBase-input-10"
+              class="PrivateSwitchBase-input-11"
               data-indeterminate="false"
               type="checkbox"
               value=""
@@ -326,7 +326,7 @@ exports[`Home page matches snapshot 1`] = `
           type="button"
         >
           <div
-            class="MuiCardContent-root makeStyles-cardContent-5"
+            class="MuiCardContent-root WithStyles(ForwardRef(CardContent))-root-12 WithStyles(ForwardRef(CardContent))-root-19"
           >
             <h5
               class="MuiTypography-root MuiTypography-h5"
