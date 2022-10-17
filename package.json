@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "5.40.0",
     "babel-jest": "27.5.1",
     "eslint": "8.25.0",
-    "eslint-config-next": "12.3.0",
+    "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-react": "7.31.8",
     "husky": "8.0.1",
