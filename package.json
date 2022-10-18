@@ -33,7 +33,6 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "5.10.9",
     "@mui/material": "5.10.9",
-    "@mui/styles": "5.10.9",
     "@reduxjs/toolkit": "1.8.6",
     "next": "latest",
     "react": "17.0.2",
