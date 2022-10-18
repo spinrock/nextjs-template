@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from '@mui/styles';
+import { styled } from '@mui/system';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Header from './Header';
