@@ -4,10 +4,11 @@ import List from '@mui/material/List';
 import { Todo } from '../../interface';
 import TodoFilter from './components/TodoFilter';
 import TodoItem from './components/TodoItem';
+import { RootState } from '../../../rootReducer';
 
 const TodoList: React.FC = () => {
   const [filterState, setFilterState] = useState(false);
-  const todoList: Todo[] = useSelector((state) => state.todo);
+  const todoList: Todo[] = useSelector((state: RootState) => state.todo);
   const viewTodoList =
     filterState != null
       ? todoList.filter((todo) => todo.completed === filterState)
