@@ -13,7 +13,11 @@ const StyledBox = styled(Box)(() => ({
   paddingTop: '60px',
 }));
 
-const CommonPageTemplate: React.FC = ({ children }) => (
+type CommonPageTemplateProps = {
+  children: React.ReactNode,
+}
+
+const CommonPageTemplate: React.FC<CommonPageTemplateProps> = ({ children }: CommonPageTemplateProps) => (
   <StyledContainer>
     <Header title="This is Next.js Template" />
     <StyledBox m={0}>
