@@ -34,9 +34,9 @@
     "@mui/icons-material": "5.10.9",
     "@mui/material": "5.10.11",
     "@reduxjs/toolkit": "1.8.6",
-    "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "13.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-redux": "7.2.9",
     "uuid": "9.0.0"
   },
