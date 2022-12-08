@@ -360,7 +360,7 @@ exports[`Home page matches snapshot 1`] = `
     <div>
       <button
         aria-label="add"
-        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-primary css-nubenn-MuiButtonBase-root-MuiFab-root"
+        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-primary css-1nwgsx-MuiButtonBase-root-MuiFab-root"
         tabindex="0"
         type="button"
       >
