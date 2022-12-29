@@ -14,9 +14,9 @@ const StyledContainer = styled(Container)(() => ({
 
 const Footer: React.FC = () => (
   <StyledContainer>
-    <Typography>
+    <Typography data-testid='footer-message'>
       Created By
-      <Link href="https://github.com/spinrock/nextjs-template">Spinrock</Link>
+      <Link href="https://github.com/spinrock/nextjs-template" data-testid='footer-link'>Spinrock</Link>
     </Typography>
   </StyledContainer>
 );

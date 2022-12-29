@@ -11,7 +11,7 @@ const Header: React.FC<Props> = ({ title }: Props) => {
   return (
     <AppBar>
       <ToolBar>
-        <Typography variant="h5">{title}</Typography>
+        <Typography variant="h5" data-testid='header-title'>{title}</Typography>
       </ToolBar>
     </AppBar>
   );
