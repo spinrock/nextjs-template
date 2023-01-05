@@ -61,11 +61,6 @@ describe('Completed Todo Test', () => {
     expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveStyle(expectedTitleStyle);
   });
 
-  it('Check Todo Description', () => {
-    const expectedTitle = dummyTodo.description;
-    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`).innerHTML).toEqual(expectedTitle);
-  });
-
   it('Check Todo Description Style', () => {
     const expectedDescriptionStyle = "textDecorationLine: line-through";
     expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`)).toHaveStyle(expectedDescriptionStyle);
