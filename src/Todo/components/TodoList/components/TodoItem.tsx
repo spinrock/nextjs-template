@@ -39,8 +39,8 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
   };
 
   return (
-    <StyledCard>
-      <CheckBox checked={todo.completed} onChange={toggleTodoFunc} />
+    <StyledCard data-testid='todoitem-card'>
+      <CheckBox checked={todo.completed} onChange={toggleTodoFunc} data-testid={`todoitem-checkbox-${todo.id}`}/>
       <CardActionArea>
         <StyledCardContent>
           <Typography
@@ -48,6 +48,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
             style={{
               textDecorationLine: todo.completed ? 'line-through' : 'blink',
             }}
+            data-testid={`todoitem-title-${todo.id}`}
           >
             {todo.title}
           </Typography>
@@ -57,6 +58,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
             style={{
               textDecorationLine: todo.completed ? 'line-through' : 'blink',
             }}
+            data-testid={`todoitem-description-${todo.id}`}
           >
             {todo.description}
           </Typography>
@@ -64,7 +66,8 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
       </CardActionArea>
       <IconButton
         onClick={deleteTodoFunc}
-      >
+        data-testid={`todoitem-delete-button-${todo.id}`}
+        >
         <DeleteIcon />
       </IconButton>
     </StyledCard>

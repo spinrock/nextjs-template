@@ -13,6 +13,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+          data-testid="select"
         >
           <div
             aria-expanded="false"
@@ -58,9 +59,11 @@ exports[`Home page matches snapshot 1`] = `
       </div>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        data-testid="todoitem-card"
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-0"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -92,12 +95,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title-0"
               style="text-decoration-line: blink;"
             >
               TechStack
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description-0"
               style="text-decoration-line: blink;"
             >
               describe below TechStack
@@ -112,6 +117,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-0"
           tabindex="0"
           type="button"
         >
@@ -133,9 +139,11 @@ exports[`Home page matches snapshot 1`] = `
       </div>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        data-testid="todoitem-card"
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-1"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -167,12 +175,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title-1"
               style="text-decoration-line: blink;"
             >
               Next.js
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description-1"
               style="text-decoration-line: blink;"
             >
               React Framework
@@ -187,6 +197,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-1"
           tabindex="0"
           type="button"
         >
@@ -208,9 +219,11 @@ exports[`Home page matches snapshot 1`] = `
       </div>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        data-testid="todoitem-card"
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-2"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -242,12 +255,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title-2"
               style="text-decoration-line: blink;"
             >
               Redux Toolkit
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description-2"
               style="text-decoration-line: blink;"
             >
               Statement Management
@@ -262,6 +277,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-2"
           tabindex="0"
           type="button"
         >
@@ -283,9 +299,11 @@ exports[`Home page matches snapshot 1`] = `
       </div>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        data-testid="todoitem-card"
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-3"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -317,12 +335,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title-3"
               style="text-decoration-line: blink;"
             >
               Material-UI
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description-3"
               style="text-decoration-line: blink;"
             >
               UI Framework
@@ -337,6 +357,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-3"
           tabindex="0"
           type="button"
         >
