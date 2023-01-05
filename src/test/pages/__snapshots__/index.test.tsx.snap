@@ -92,12 +92,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title"
               style="text-decoration-line: blink;"
             >
               TechStack
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description"
               style="text-decoration-line: blink;"
             >
               describe below TechStack
@@ -167,12 +169,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title"
               style="text-decoration-line: blink;"
             >
               Next.js
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description"
               style="text-decoration-line: blink;"
             >
               React Framework
@@ -242,12 +246,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title"
               style="text-decoration-line: blink;"
             >
               Redux Toolkit
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description"
               style="text-decoration-line: blink;"
             >
               Statement Management
@@ -317,12 +323,14 @@ exports[`Home page matches snapshot 1`] = `
           >
             <h5
               class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+              data-testid="todoitem-title"
               style="text-decoration-line: blink;"
             >
               Material-UI
             </h5>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+              data-testid="todoitem-description"
               style="text-decoration-line: blink;"
             >
               UI Framework
