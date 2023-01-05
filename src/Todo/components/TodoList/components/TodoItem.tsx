@@ -48,7 +48,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
             style={{
               textDecorationLine: todo.completed ? 'line-through' : 'blink',
             }}
-            data-testid='todoitem-title'
+            data-testid={`todoitem-title-${todo.id}`}
           >
             {todo.title}
           </Typography>
@@ -58,7 +58,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
             style={{
               textDecorationLine: todo.completed ? 'line-through' : 'blink',
             }}
-            data-testid='todoitem-description'
+            data-testid={`todoitem-description-${todo.id}`}
           >
             {todo.description}
           </Typography>

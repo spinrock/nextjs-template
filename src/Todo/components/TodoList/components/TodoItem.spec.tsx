@@ -28,22 +28,22 @@ describe('Common Test', () => {
 
   it('Check Todo Title', () => {
     const expectedTitle = dummyTodo.title;
-    expect(screen.getByTestId('todoitem-title').innerHTML).toEqual(expectedTitle);
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`).innerHTML).toEqual(expectedTitle);
   });
 
   it('Check Todo Title Style', () => {
     const expectedTitleStyle = "textDecorationLine: blink";
-    expect(screen.getByTestId('todoitem-title')).toHaveStyle(expectedTitleStyle);
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveStyle(expectedTitleStyle);
   });
 
   it('Check Todo Description', () => {
     const expectedDescription = dummyTodo.description;
-    expect(screen.getByTestId('todoitem-description').innerHTML).toEqual(expectedDescription);
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`).innerHTML).toEqual(expectedDescription);
   });
 
   it('Check Todo Description Style', () => {
     const expectedDescriptionStyle = "textDecorationLine: blink";
-    expect(screen.getByTestId('todoitem-description')).toHaveStyle(expectedDescriptionStyle);
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`)).toHaveStyle(expectedDescriptionStyle);
   });
 });
 
@@ -58,16 +58,16 @@ describe('Completed Todo Test', () => {
 
   it('Check Todo Title Style', () => {
     const expectedTitleStyle = "textDecorationLine: line-through";
-    expect(screen.getByTestId('todoitem-title')).toHaveStyle(expectedTitleStyle);
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveStyle(expectedTitleStyle);
   });
 
   it('Check Todo Description', () => {
     const expectedTitle = dummyTodo.description;
-    expect(screen.getByTestId('todoitem-description').innerHTML).toEqual(expectedTitle);
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`).innerHTML).toEqual(expectedTitle);
   });
 
   it('Check Todo Description Style', () => {
     const expectedDescriptionStyle = "textDecorationLine: line-through";
-    expect(screen.getByTestId('todoitem-description')).toHaveStyle(expectedDescriptionStyle);
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`)).toHaveStyle(expectedDescriptionStyle);
   });
 });
