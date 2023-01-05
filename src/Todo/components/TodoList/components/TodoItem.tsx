@@ -39,7 +39,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
   };
 
   return (
-    <StyledCard>
+    <StyledCard data-testid='todoitem-card'>
       <CheckBox checked={todo.completed} onChange={toggleTodoFunc} />
       <CardActionArea>
         <StyledCardContent>

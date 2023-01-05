@@ -25,7 +25,7 @@ const TodoList: React.FC = () => {
         callbackOnChengeFunction={callbackFilterState}
       />
       {viewTodoList.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
+        <TodoItem key={todo.id} todo={todo}/>
       ))}
     </List>
   );
