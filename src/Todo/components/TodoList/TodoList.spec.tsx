@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { render, screen, waitForElementToBeRemoved } from '../../../test/testUtils';
+import { render, screen } from '../../../test/testUtils';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
