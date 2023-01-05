@@ -117,6 +117,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-0"
           tabindex="0"
           type="button"
         >
@@ -196,6 +197,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-1"
           tabindex="0"
           type="button"
         >
@@ -275,6 +277,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-2"
           tabindex="0"
           type="button"
         >
@@ -354,6 +357,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="todoitem-delete-button-3"
           tabindex="0"
           type="button"
         >

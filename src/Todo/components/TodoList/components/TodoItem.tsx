@@ -66,7 +66,8 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
       </CardActionArea>
       <IconButton
         onClick={deleteTodoFunc}
-      >
+        data-testid={`todoitem-delete-button-${todo.id}`}
+        >
         <DeleteIcon />
       </IconButton>
     </StyledCard>
