@@ -30,13 +30,45 @@ describe('Common Test', () => {
     expect(screen.getByTestId(`todoitem-title-${todo.id}`).innerHTML).toEqual(expectedTitle);
     expect(screen.getByTestId(`todoitem-description-${todo.id}`).innerHTML).toEqual(expectedDescription);
   });
+});
 
-  it('Disable Checked Todo', async () => {
-    const targetCheckboxId = `todoitem-checkbox-${store.getState().todo[0].id}`;
+describe('Checked Todo Test', () => {
+  const targetCheckboxId = `todoitem-checkbox-${store.getState().todo[0].id}`;
 
-    expect(screen.getByTestId(targetCheckboxId)).not.toBeChecked();
+  beforeEach(async () => {
+    render(
+      <Provider store={store}>
+        <TodoList />
+      </Provider>
+    );
     await userEvent.click(screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"));
+  });
 
-    expect(screen.queryByTestId(targetCheckboxId)).toBeNull();
+  it('Check TodoList Length', async () => {
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 1);
+
+    await userEvent.click(screen.getByText('Incompleted'));
+    await userEvent.click(screen.getByText('ALL'));
+    await userEvent.click(screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"));
+  });
+
+  it('Update Filter(Imcompleted -> ALL)', async () => {
+    await userEvent.click(screen.getByText('Incompleted'));
+    await userEvent.click(screen.getByText('ALL'));
+
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length);
+
+    await userEvent.click(screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"));
+  });
+
+  it('Update Filter(Imcompleted -> Completed)', async () => {
+    await userEvent.click(screen.getByText('Incompleted'));
+    await userEvent.click(screen.getByText('Completed'));
+
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 3);
+
+    await userEvent.click(screen.getAllByText('Completed')[0]);
+    await userEvent.click(screen.getByText('ALL'));
+    await userEvent.click(screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"));
   });
 });
