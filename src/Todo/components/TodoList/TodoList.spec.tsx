@@ -1,8 +1,9 @@
 /**
  * @jest-environment jsdom
  */
-import { render, screen } from '../../../test/testUtils';
+import { render, screen, waitForElementToBeRemoved } from '../../../test/testUtils';
 import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import store from '../../../rootStore';
 import TodoList from './index';
@@ -28,5 +29,14 @@ describe('Common Test', () => {
 
     expect(screen.getByTestId(`todoitem-title-${todo.id}`).innerHTML).toEqual(expectedTitle);
     expect(screen.getByTestId(`todoitem-description-${todo.id}`).innerHTML).toEqual(expectedDescription);
+  });
+
+  it('Disable Checked Todo', async () => {
+    const targetCheckboxId = `todoitem-checkbox-${store.getState().todo[0].id}`;
+
+    expect(screen.getByTestId(targetCheckboxId)).not.toBeChecked();
+    await userEvent.click(screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"));
+
+    expect(screen.queryByTestId(targetCheckboxId)).toBeNull();
   });
 });

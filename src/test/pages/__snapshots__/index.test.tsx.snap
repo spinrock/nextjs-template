@@ -63,6 +63,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-0"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -141,6 +142,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-1"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -219,6 +221,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-2"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
@@ -297,6 +300,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <span
           class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+          data-testid="todoitem-checkbox-3"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
