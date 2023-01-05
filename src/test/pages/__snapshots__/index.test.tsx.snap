@@ -13,6 +13,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+          data-testid="select"
         >
           <div
             aria-expanded="false"

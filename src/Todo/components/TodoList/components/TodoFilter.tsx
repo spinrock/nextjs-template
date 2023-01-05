@@ -43,6 +43,7 @@ const TodoFilter: React.FC<Props> = ({
           ).stateValue
         )
       }}
+      data-testid='select'
     >
       {menuItemList.map((menuItem) => (
         <MenuItem key={menuItem.menuValue} value={menuItem.menuValue}>
