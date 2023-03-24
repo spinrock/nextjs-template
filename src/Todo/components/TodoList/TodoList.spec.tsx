@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+import React from 'react';
 import { render, screen } from '../../../test/testUtils';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
