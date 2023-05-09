@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { styled } from '@mui/system';
 import Box from '@mui/material/Box';
