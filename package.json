@@ -54,7 +54,7 @@
     "@storybook/react": "^7.0.2",
     "@storybook/testing-library": "^0.2.0",
     "@swc/jest": "^0.2.24",
-    "@testing-library/jest-dom": "6.2.0",
+    "@testing-library/jest-dom": "6.2.1",
     "@testing-library/react": "14.1.2",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "29.5.11",
