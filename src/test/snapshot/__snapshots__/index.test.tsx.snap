@@ -16,10 +16,11 @@ exports[`Home page matches snapshot 1`] = `
           data-testid="select"
         >
           <div
+            aria-controls=":r0:"
             aria-expanded="false"
             aria-haspopup="listbox"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            role="button"
+            role="combobox"
             tabindex="0"
           >
             Incompleted
@@ -130,7 +131,7 @@ exports[`Home page matches snapshot 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
             />
           </svg>
           <span
@@ -210,7 +211,7 @@ exports[`Home page matches snapshot 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
             />
           </svg>
           <span
@@ -290,7 +291,7 @@ exports[`Home page matches snapshot 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
             />
           </svg>
           <span
@@ -370,7 +371,7 @@ exports[`Home page matches snapshot 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
             />
           </svg>
           <span
@@ -394,7 +395,7 @@ exports[`Home page matches snapshot 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
           />
         </svg>
         <span
