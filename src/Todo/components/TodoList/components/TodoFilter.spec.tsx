@@ -19,7 +19,7 @@ describe('Common Test', () => {
     );
 
     const expectedSelectButtonTitle = 'ALL';
-    expect(screen.getByRole('button').innerHTML).toEqual(expectedSelectButtonTitle);
+    expect(screen.getByRole('combobox').innerHTML).toEqual(expectedSelectButtonTitle);
   });
 
   it('Check Select Button Title (filterState false)', () => {
@@ -30,7 +30,7 @@ describe('Common Test', () => {
     );
 
     const expectedSelectButtonTitle = 'Incompleted';
-    expect(screen.getByRole('button').innerHTML).toEqual(expectedSelectButtonTitle);
+    expect(screen.getByRole('combobox').innerHTML).toEqual(expectedSelectButtonTitle);
   });
 
   it('Check Select Button Title (filterState true)', () => {
@@ -41,6 +41,6 @@ describe('Common Test', () => {
     );
 
     const expectedSelectButtonTitle = 'Completed';
-    expect(screen.getByRole('button').innerHTML).toEqual(expectedSelectButtonTitle);
+    expect(screen.getByRole('combobox').innerHTML).toEqual(expectedSelectButtonTitle);
   });
 });
