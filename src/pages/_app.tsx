@@ -7,6 +7,7 @@ import theme from '../styles/theme'
 import store from '../rootStore'
 import PropTypes from 'prop-types'
 import CssBaseline from '@mui/material/CssBaseline'
+import '../globals.css'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props
