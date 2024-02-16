@@ -14,7 +14,7 @@
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\"",
     "test-all": "npm run lint && npm run type-check && npm run test",
     "e2e-test": "playwright test",
-    "prepare": "husky install",
+    "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
