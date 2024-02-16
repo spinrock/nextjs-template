@@ -1,7 +1,4 @@
-import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import ToolBar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import React from 'react'
 
 type Props = {
   title: string
@@ -9,12 +6,12 @@ type Props = {
 
 const Header: React.FC<Props> = ({ title }: Props) => {
   return (
-    <AppBar>
-      <ToolBar>
-        <Typography variant="h5" data-testid='header-title'>{title}</Typography>
-      </ToolBar>
-    </AppBar>
-  );
+    <div className="h-16 w-full bg-slate-200">
+      <p className="text-2xl leading-[64px] pl-4" data-testid="header-title">
+        {title}
+      </p>
+    </div>
+  )
 }
 
-export default Header;
+export default Header

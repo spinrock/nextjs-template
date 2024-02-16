@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { styled } from '@mui/system';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import TextField from '@mui/material/TextField';
-import { addTodo } from '../../../../reducer';
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { styled } from '@mui/system'
+import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogTitle from '@mui/material/DialogTitle'
+import DialogContent from '@mui/material/DialogContent'
+import TextField from '@mui/material/TextField'
+import { addTodo } from '../../../../reducer'
 
 const StyledDialogContent = styled(DialogContent)(() => ({
   display: 'grid',
-}));
+}))
 
 type Props = {
   open: boolean
@@ -19,9 +19,9 @@ type Props = {
 }
 
 const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
-  const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const dispatch = useDispatch()
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
 
   const addTodoFunc: VoidFunction = () => {
     dispatch(addTodo({ title: title, description: description }))
@@ -64,7 +64,7 @@ const CreateTodoDialog: React.FC<Props> = ({ open, closeDialog }: Props) => {
         </Button>
       </DialogActions>
     </Dialog>
-  );
+  )
 }
 
-export default CreateTodoDialog;
+export default CreateTodoDialog

@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-import CreateTodoDialog from './components/CreateTodoDialog';
+import React, { useState } from 'react'
+import Fab from '@mui/material/Fab'
+import AddIcon from '@mui/icons-material/Add'
+import CreateTodoDialog from './components/CreateTodoDialog'
 
 const AddTodoBtn: React.FC = () => {
-  const [dialogStatus, setDialogStatus] = useState(false);
+  const [dialogStatus, setDialogStatus] = useState(false)
 
   const openDialog: VoidFunction = () => {
     setDialogStatus(true)
-  };
+  }
 
   const closeDialog: VoidFunction = () => {
     setDialogStatus(false)
-  };
+  }
 
   return (
     <div>
@@ -26,7 +26,7 @@ const AddTodoBtn: React.FC = () => {
       </Fab>
       <CreateTodoDialog open={dialogStatus} closeDialog={closeDialog} />
     </div>
-  );
+  )
 }
 
-export default AddTodoBtn;
+export default AddTodoBtn

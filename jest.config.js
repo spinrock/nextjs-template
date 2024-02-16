@@ -1,7 +1,10 @@
 module.exports = {
   roots: ['<rootDir>'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
-  testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]', '<rootDir>/src/test/e2e'],
+  testPathIgnorePatterns: [
+    '<rootDir>[/\\\\](node_modules|.next)[/\\\\]',
+    '<rootDir>/src/test/e2e',
+  ],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
   transform: {
     '^.+\\.(ts|tsx)$': '@swc/jest',

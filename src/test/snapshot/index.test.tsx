@@ -14,7 +14,7 @@ describe('Home page', () => {
       <Provider store={store}>
         <Home />
       </Provider>,
-      {}
+      {},
     )
     expect(asFragment()).toMatchSnapshot()
   })

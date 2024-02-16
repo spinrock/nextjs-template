@@ -28,13 +28,8 @@ const todosSlice = createSlice({
       }
     },
     updateTodo(state, action) {
-      const {
-        id,
-        title,
-        description,
-        parentTaskId,
-        childrenTaskIds,
-      } = action.payload
+      const { id, title, description, parentTaskId, childrenTaskIds } =
+        action.payload
       const todo = state.find((todo) => todo.id === id)
       if (todo) {
         todo.title = title ? title : todo.title
@@ -57,11 +52,7 @@ const todosSlice = createSlice({
   },
 })
 
-export const {
-  addTodo,
-  deleteTodo,
-  updateTodo,
-  toggleTodo,
-} = todosSlice.actions
+export const { addTodo, deleteTodo, updateTodo, toggleTodo } =
+  todosSlice.actions
 
 export default todosSlice.reducer
