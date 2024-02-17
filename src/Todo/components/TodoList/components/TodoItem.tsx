@@ -46,15 +46,12 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
       />
       <CardActionArea>
         <StyledCardContent>
-          <Typography
-            variant="h5"
-            style={{
-              textDecorationLine: todo.completed ? 'line-through' : 'blink',
-            }}
+          <p
+            className={`text-2xl ${todo.completed ? 'line-through' : 'no-underline'}`}
             data-testid={`todoitem-title-${todo.id}`}
           >
             {todo.title}
-          </Typography>
+          </p>
           <Typography
             variant="body1"
             noWrap={true}

@@ -35,8 +35,8 @@ describe('Common Test', () => {
   })
 
   it('Check Todo Title Style', () => {
-    const expectedTitleStyle = 'textDecorationLine: blink'
-    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveStyle(
+    const expectedTitleStyle = 'no-underline'
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(
       expectedTitleStyle,
     )
   })
@@ -66,8 +66,8 @@ describe('Completed Todo Test', () => {
   })
 
   it('Check Todo Title Style', () => {
-    const expectedTitleStyle = 'textDecorationLine: line-through'
-    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveStyle(
+    const expectedTitleStyle = 'line-through'
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(
       expectedTitleStyle,
     )
   })

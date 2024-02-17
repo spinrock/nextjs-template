@@ -95,13 +95,12 @@ exports[`Home page matches snapshot 1`] = `
           <div
             class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
           >
-            <h5
-              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            <p
+              class="text-2xl no-underline"
               data-testid="todoitem-title-0"
-              style="text-decoration-line: blink;"
             >
               TechStack
-            </h5>
+            </p>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
               data-testid="todoitem-description-0"
@@ -178,13 +177,12 @@ exports[`Home page matches snapshot 1`] = `
           <div
             class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
           >
-            <h5
-              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            <p
+              class="text-2xl no-underline"
               data-testid="todoitem-title-1"
-              style="text-decoration-line: blink;"
             >
               Next.js
-            </h5>
+            </p>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
               data-testid="todoitem-description-1"
@@ -261,13 +259,12 @@ exports[`Home page matches snapshot 1`] = `
           <div
             class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
           >
-            <h5
-              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            <p
+              class="text-2xl no-underline"
               data-testid="todoitem-title-2"
-              style="text-decoration-line: blink;"
             >
               Redux Toolkit
-            </h5>
+            </p>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
               data-testid="todoitem-description-2"
@@ -344,13 +341,12 @@ exports[`Home page matches snapshot 1`] = `
           <div
             class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
           >
-            <h5
-              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            <p
+              class="text-2xl no-underline"
               data-testid="todoitem-title-3"
-              style="text-decoration-line: blink;"
             >
               Material-UI
-            </h5>
+            </p>
             <p
               class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
               data-testid="todoitem-description-3"
