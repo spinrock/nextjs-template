@@ -2,11 +2,8 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { styled } from '@mui/material/styles'
 import Card from '@mui/material/Card'
-import CardActionArea from '@mui/material/CardActionArea'
-import CardContent from '@mui/material/CardContent'
 import CheckBox from '@mui/material/Checkbox'
 import { MdDelete } from 'react-icons/md'
-import Typography from '@mui/material/Typography'
 import theme from '../../../../styles/theme'
 import { Todo } from '../../../interface'
 import { toggleTodo, deleteTodo } from '../../../reducer'
@@ -16,10 +13,6 @@ const StyledCard = styled(Card)(() => ({
   marginBottom: theme.spacing(2),
   height: theme.spacing(10),
   display: 'flex',
-}))
-
-const StyledCardContent = styled(CardContent)(() => ({
-  width: '90%',
 }))
 
 type Props = {
@@ -44,29 +37,22 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
         onChange={toggleTodoFunc}
         data-testid={`todoitem-checkbox-${todo.id}`}
       />
-      <CardActionArea>
-        <StyledCardContent>
-          <Typography
-            variant="h5"
-            style={{
-              textDecorationLine: todo.completed ? 'line-through' : 'blink',
-            }}
-            data-testid={`todoitem-title-${todo.id}`}
-          >
-            {todo.title}
-          </Typography>
-          <Typography
-            variant="body1"
-            noWrap={true}
-            style={{
-              textDecorationLine: todo.completed ? 'line-through' : 'blink',
-            }}
-            data-testid={`todoitem-description-${todo.id}`}
-          >
-            {todo.description}
-          </Typography>
-        </StyledCardContent>
-      </CardActionArea>
+      <div
+        className='flex-1 py-3'
+      >
+        <p
+          className={`text-2xl ${todo.completed ? 'line-through' : 'no-underline'}`}
+          data-testid={`todoitem-title-${todo.id}`}
+        >
+          {todo.title}
+        </p>
+        <p
+          className={`${todo.completed ? 'line-through' : 'no-underline'}`}
+          data-testid={`todoitem-description-${todo.id}`}
+        >
+          {todo.description}
+        </p>
+      </div>
       <button
         type="button"
         onClick={deleteTodoFunc}
