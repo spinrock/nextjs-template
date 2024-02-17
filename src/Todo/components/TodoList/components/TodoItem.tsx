@@ -5,8 +5,7 @@ import Card from '@mui/material/Card'
 import CardActionArea from '@mui/material/CardActionArea'
 import CardContent from '@mui/material/CardContent'
 import CheckBox from '@mui/material/Checkbox'
-import DeleteIcon from '@mui/icons-material/Delete'
-import IconButton from '@mui/material/IconButton'
+import { MdDelete } from 'react-icons/md'
 import Typography from '@mui/material/Typography'
 import theme from '../../../../styles/theme'
 import { Todo } from '../../../interface'
@@ -68,12 +67,14 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
           </Typography>
         </StyledCardContent>
       </CardActionArea>
-      <IconButton
+      <button
+        type="button"
         onClick={deleteTodoFunc}
         data-testid={`todoitem-delete-button-${todo.id}`}
+        className="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
       >
-        <DeleteIcon />
-      </IconButton>
+        <MdDelete className="size-6 text-slate-500" />
+      </button>
     </StyledCard>
   )
 }
