@@ -1,29 +1,18 @@
 import React from 'react'
-import { styled } from '@mui/system'
-import Container from '@mui/material/Container'
-import Link from '@mui/material/Link'
-import Typography from '@mui/material/Typography'
-
-const StyledContainer = styled(Container)(() => ({
-  height: '40px',
-  borderTop: '1px solid #eaeaea',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-}))
+import Link from 'next/link'
 
 const Footer: React.FC = () => (
-  <StyledContainer>
-    <Typography data-testid="footer-message">
-      Created By
+  <div className="mt-3 h-10 flex justify-center border-t-2 border-slate-200">
+    <p data-testid="footer-message" className="pt-3">
+      Created By&nbsp;
       <Link
         href="https://github.com/spinrock/nextjs-template"
         data-testid="footer-link"
       >
         Spinrock
       </Link>
-    </Typography>
-  </StyledContainer>
+    </p>
+  </div>
 )
 
 export default Footer

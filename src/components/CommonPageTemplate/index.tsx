@@ -24,8 +24,8 @@ const CommonPageTemplate: React.FC<CommonPageTemplateProps> = ({
     <Header title="This is Next.js Template" />
     <StyledContainer>
       <StyledBox m={0}>{children}</StyledBox>
-      <Footer />
     </StyledContainer>
+    <Footer />
   </>
 )
 
