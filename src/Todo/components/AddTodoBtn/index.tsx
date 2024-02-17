@@ -23,7 +23,7 @@ const AddTodoBtn: React.FC = () => {
       >
         <MdAdd className="size-6" />
       </button>
-      <CreateTodoDialog open={dialogStatus} closeDialog={closeDialog} />
+      <CreateTodoDialog isOpen={dialogStatus} closeDialog={closeDialog} />
     </div>
   )
 }
