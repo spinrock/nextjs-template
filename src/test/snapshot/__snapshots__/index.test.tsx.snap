@@ -87,35 +87,22 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
-        <button
-          class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
-          tabindex="0"
-          type="button"
+        <div
+          class="flex-1 py-3"
         >
-          <div
-            class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
+          <p
+            class="text-2xl no-underline"
+            data-testid="todoitem-title-0"
           >
-            <p
-              class="text-2xl no-underline"
-              data-testid="todoitem-title-0"
-            >
-              TechStack
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
-              data-testid="todoitem-description-0"
-              style="text-decoration-line: blink;"
-            >
-              describe below TechStack
-            </p>
-          </div>
-          <span
-            class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
-          />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
+            TechStack
+          </p>
+          <p
+            class="no-underline"
+            data-testid="todoitem-description-0"
+          >
+            describe below TechStack
+          </p>
+        </div>
         <button
           class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
           data-testid="todoitem-delete-button-0"
@@ -169,35 +156,22 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
-        <button
-          class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
-          tabindex="0"
-          type="button"
+        <div
+          class="flex-1 py-3"
         >
-          <div
-            class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
+          <p
+            class="text-2xl no-underline"
+            data-testid="todoitem-title-1"
           >
-            <p
-              class="text-2xl no-underline"
-              data-testid="todoitem-title-1"
-            >
-              Next.js
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
-              data-testid="todoitem-description-1"
-              style="text-decoration-line: blink;"
-            >
-              React Framework
-            </p>
-          </div>
-          <span
-            class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
-          />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
+            Next.js
+          </p>
+          <p
+            class="no-underline"
+            data-testid="todoitem-description-1"
+          >
+            React Framework
+          </p>
+        </div>
         <button
           class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
           data-testid="todoitem-delete-button-1"
@@ -251,35 +225,22 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
-        <button
-          class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
-          tabindex="0"
-          type="button"
+        <div
+          class="flex-1 py-3"
         >
-          <div
-            class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
+          <p
+            class="text-2xl no-underline"
+            data-testid="todoitem-title-2"
           >
-            <p
-              class="text-2xl no-underline"
-              data-testid="todoitem-title-2"
-            >
-              Redux Toolkit
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
-              data-testid="todoitem-description-2"
-              style="text-decoration-line: blink;"
-            >
-              Statement Management
-            </p>
-          </div>
-          <span
-            class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
-          />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
+            Redux Toolkit
+          </p>
+          <p
+            class="no-underline"
+            data-testid="todoitem-description-2"
+          >
+            Statement Management
+          </p>
+        </div>
         <button
           class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
           data-testid="todoitem-delete-button-2"
@@ -333,35 +294,22 @@ exports[`Home page matches snapshot 1`] = `
             class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
-        <button
-          class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
-          tabindex="0"
-          type="button"
+        <div
+          class="flex-1 py-3"
         >
-          <div
-            class="MuiCardContent-root css-ri1am0-MuiCardContent-root"
+          <p
+            class="text-2xl no-underline"
+            data-testid="todoitem-title-3"
           >
-            <p
-              class="text-2xl no-underline"
-              data-testid="todoitem-title-3"
-            >
-              Material-UI
-            </p>
-            <p
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
-              data-testid="todoitem-description-3"
-              style="text-decoration-line: blink;"
-            >
-              UI Framework
-            </p>
-          </div>
-          <span
-            class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
-          />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
-        </button>
+            Material-UI
+          </p>
+          <p
+            class="no-underline"
+            data-testid="todoitem-description-3"
+          >
+            UI Framework
+          </p>
+        </div>
         <button
           class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
           data-testid="todoitem-delete-button-3"
