@@ -405,6 +405,56 @@ exports[`Home page matches snapshot 1`] = `
           />
         </svg>
       </button>
+      <dialog
+        class=" h-56 w-72 rounded-lg"
+      >
+        <div
+          class="px-4 h-56 w-72"
+        >
+          <div
+            class="flex justify-center py-4"
+          >
+            <p
+              class="text-xl"
+            >
+              Please Input Todo Property
+            </p>
+          </div>
+          <div
+            class="grid gap-3"
+          >
+            <input
+              aria-label="Title"
+              class="h-10 border-slate-300 border-[1px] rounded-md pl-3"
+              placeholder="Please Input Title"
+              required=""
+              type="text"
+            />
+            <textarea
+              aria-label="Description"
+              class="h-10 border-slate-300 border-[1px] rounded-md pl-3 leading-10"
+              placeholder="Description"
+            />
+          </div>
+          <div
+            class="flex gap-3 my-4 justify-center"
+          >
+            <button
+              class="h-10 px-3 rounded-md bg-slate-200 hover:bg-slate-300 disabled:bg-gray-200 disabled:text-gray-400"
+              disabled=""
+              type="button"
+            >
+              Create Todo
+            </button>
+            <button
+              class="h-10 px-3 rounded-md text-red-700 hover:bg-red-200"
+              type="button"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </dialog>
     </div>
   </div>
 </DocumentFragment>
