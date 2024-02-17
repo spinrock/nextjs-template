@@ -47,7 +47,7 @@ describe('addTodo Test', () => {
           title: todo01.title,
           description: todo01.description,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -62,7 +62,7 @@ describe('addTodo Test', () => {
           title: todo01.title,
           description: todo01.description,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 })
@@ -78,7 +78,7 @@ describe('toggleTodo Test', () => {
         payload: {
           id: todo01.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -92,7 +92,7 @@ describe('toggleTodo Test', () => {
         payload: {
           id: todo00.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -106,7 +106,7 @@ describe('toggleTodo Test', () => {
         payload: {
           id: todo02.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 })
@@ -124,7 +124,7 @@ describe('deleteTodo Test', () => {
         payload: {
           id: todo00.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -138,7 +138,7 @@ describe('deleteTodo Test', () => {
         payload: {
           id: todo01.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -152,7 +152,7 @@ describe('deleteTodo Test', () => {
         payload: {
           id: todo02.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -166,7 +166,7 @@ describe('deleteTodo Test', () => {
         payload: {
           id: todo00.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -180,7 +180,7 @@ describe('deleteTodo Test', () => {
         payload: {
           id: todo02.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 })
@@ -196,7 +196,7 @@ describe('updateTodo Test', () => {
           id: todo01.id,
           title: 'update test1',
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -213,7 +213,7 @@ describe('updateTodo Test', () => {
           id: todo00.id,
           description: 'this is update description',
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -232,7 +232,7 @@ describe('updateTodo Test', () => {
           id: todo00.id,
           parentTaskId: todo01.id,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -250,7 +250,7 @@ describe('updateTodo Test', () => {
           id: todo02.id,
           childrenTaskIds: [todo00.id, todo01.id],
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -268,7 +268,7 @@ describe('updateTodo Test', () => {
           id: todo02.id,
           childrenTaskIds: [],
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -295,7 +295,7 @@ describe('updateTodo Test', () => {
           parentTaskId: todo00.id,
           childrenTaskIds: [todo01.id],
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -320,7 +320,7 @@ describe('updateTodo Test', () => {
           parentTaskId: null,
           childrenTaskIds: null,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 
@@ -337,7 +337,7 @@ describe('updateTodo Test', () => {
           parentTaskId: undefined,
           childrenTaskIds: undefined,
         },
-      })
+      }),
     ).toEqual(expected)
   })
 })

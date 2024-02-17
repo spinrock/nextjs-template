@@ -9,21 +9,20 @@ const menuItemList = [
   { menuValue: 'ALL', stateValue: null },
   { menuValue: 'Incompleted', stateValue: false },
   { menuValue: 'Completed', stateValue: true },
-];
+]
 
 const StyledBox = styled(Box)(() => ({
   display: 'flex',
   justifyContent: 'flex-end',
-}));
+}))
 
 const StyledSelect = styled(Select)(() => ({
   width: theme.spacing(20),
-}));
-
+}))
 
 type Props = {
-  filterState: boolean;
-  callbackOnChengeFunction: (state: boolean) => void;
+  filterState: boolean
+  callbackOnChengeFunction: (state: boolean) => void
 }
 
 const TodoFilter: React.FC<Props> = ({
@@ -39,11 +38,11 @@ const TodoFilter: React.FC<Props> = ({
       onChange={(event) => {
         callbackOnChengeFunction(
           menuItemList.find(
-            (menuItem) => menuItem.menuValue === event.target.value
-          ).stateValue
+            (menuItem) => menuItem.menuValue === event.target.value,
+          ).stateValue,
         )
       }}
-      data-testid='select'
+      data-testid="select"
     >
       {menuItemList.map((menuItem) => (
         <MenuItem key={menuItem.menuValue} value={menuItem.menuValue}>
@@ -52,6 +51,6 @@ const TodoFilter: React.FC<Props> = ({
       ))}
     </StyledSelect>
   </StyledBox>
-);
+)
 
-export default TodoFilter;
+export default TodoFilter
