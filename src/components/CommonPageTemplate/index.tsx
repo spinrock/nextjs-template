@@ -11,11 +11,7 @@ const CommonPageTemplate: React.FC<CommonPageTemplateProps> = ({
 }: CommonPageTemplateProps) => (
   <>
     <Header title="This is Next.js Template" />
-    <div
-      className='pt-3'
-    >
-      {children}
-    </div>
+    <div className="pt-3">{children}</div>
     <Footer />
   </>
 )

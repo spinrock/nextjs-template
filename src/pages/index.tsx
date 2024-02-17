@@ -4,9 +4,7 @@ import AddTodoBtn from '../Todo/components/AddTodoBtn'
 
 const Home: React.FC = () => {
   return (
-    <div
-      className='mx-36'
-    >
+    <div className="mx-36">
       <TodoList />
       <AddTodoBtn />
     </div>
