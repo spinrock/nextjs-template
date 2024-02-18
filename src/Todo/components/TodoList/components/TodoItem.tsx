@@ -1,19 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { styled } from '@mui/material/styles'
-import Card from '@mui/material/Card'
 import CheckBox from '@mui/material/Checkbox'
 import { MdDelete } from 'react-icons/md'
-import theme from '../../../../styles/theme'
 import { Todo } from '../../../interface'
 import { toggleTodo, deleteTodo } from '../../../reducer'
-
-const StyledCard = styled(Card)(() => ({
-  marginTop: theme.spacing(2),
-  marginBottom: theme.spacing(2),
-  height: theme.spacing(10),
-  display: 'flex',
-}))
 
 type Props = {
   todo: Todo
@@ -31,15 +21,13 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
   }
 
   return (
-    <StyledCard data-testid="todoitem-card">
+    <div className="flex my-2 h-20 shadow-md" data-testid="todoitem-card">
       <CheckBox
         checked={todo.completed}
         onChange={toggleTodoFunc}
         data-testid={`todoitem-checkbox-${todo.id}`}
       />
-      <div
-        className='flex-1 py-3'
-      >
+      <div className="flex-1 py-3">
         <p
           className={`text-2xl ${todo.completed ? 'line-through' : 'no-underline'}`}
           data-testid={`todoitem-title-${todo.id}`}
@@ -61,7 +49,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
       >
         <MdDelete className="size-6 text-slate-500" />
       </button>
-    </StyledCard>
+    </div>
   )
 }
 

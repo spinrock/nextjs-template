@@ -60,7 +60,7 @@ exports[`Home page matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        class="flex my-2 h-20 shadow-md"
         data-testid="todoitem-card"
       >
         <span
@@ -129,7 +129,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        class="flex my-2 h-20 shadow-md"
         data-testid="todoitem-card"
       >
         <span
@@ -198,7 +198,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        class="flex my-2 h-20 shadow-md"
         data-testid="todoitem-card"
       >
         <span
@@ -267,7 +267,7 @@ exports[`Home page matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1kokbqj-MuiPaper-root-MuiCard-root"
+        class="flex my-2 h-20 shadow-md"
         data-testid="todoitem-card"
       >
         <span
