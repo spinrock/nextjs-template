@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import CheckBox from '@mui/material/Checkbox'
-import { MdDelete } from 'react-icons/md'
+import { MdDelete, MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md'
 import { Todo } from '../../../interface'
 import { toggleTodo, deleteTodo } from '../../../reducer'
 
@@ -22,11 +21,22 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
 
   return (
     <div className="flex my-2 h-20 shadow-md" data-testid="todoitem-card">
-      <CheckBox
-        checked={todo.completed}
-        onChange={toggleTodoFunc}
+      <div
+        className="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
         data-testid={`todoitem-checkbox-${todo.id}`}
-      />
+      >
+        <input
+          type="checkbox"
+          checked={todo.completed}
+          onChange={toggleTodoFunc}
+          className=" opacity-0 w-11 h-20 absolute cursor-pointer"
+        />
+        {todo.completed ? (
+          <MdCheckBox className="size-6  " />
+        ) : (
+          <MdCheckBoxOutlineBlank className="size-6" />
+        )}
+      </div>
       <div className="flex-1 py-3">
         <p
           className={`text-2xl ${todo.completed ? 'line-through' : 'no-underline'}`}
