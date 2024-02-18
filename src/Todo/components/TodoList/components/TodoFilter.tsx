@@ -1,6 +1,5 @@
 import React from 'react'
 import { styled } from '@mui/material/styles'
-import Box from '@mui/material/Box'
 import MenuItem from '@mui/material/MenuItem'
 import Select from '@mui/material/Select'
 import theme from '../../../../styles/theme'
@@ -10,11 +9,6 @@ const menuItemList = [
   { menuValue: 'Incompleted', stateValue: false },
   { menuValue: 'Completed', stateValue: true },
 ]
-
-const StyledBox = styled(Box)(() => ({
-  display: 'flex',
-  justifyContent: 'flex-end',
-}))
 
 const StyledSelect = styled(Select)(() => ({
   width: theme.spacing(20),
@@ -29,7 +23,9 @@ const TodoFilter: React.FC<Props> = ({
   filterState,
   callbackOnChengeFunction,
 }: Props) => (
-  <StyledBox m={0}>
+  <div
+    className='flex justify-end'
+  >
     <StyledSelect
       value={
         menuItemList.find((menuItem) => menuItem.stateValue === filterState)
@@ -50,7 +46,7 @@ const TodoFilter: React.FC<Props> = ({
         </MenuItem>
       ))}
     </StyledSelect>
-  </StyledBox>
+  </div>
 )
 
 export default TodoFilter

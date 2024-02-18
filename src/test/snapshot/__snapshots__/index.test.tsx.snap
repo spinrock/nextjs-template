@@ -6,7 +6,7 @@ exports[`Home page matches snapshot 1`] = `
     class="mx-36"
   >
     <div
-      class="MuiBox-root css-uwvihb"
+      class="flex justify-end"
     >
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
