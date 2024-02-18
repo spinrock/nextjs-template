@@ -5,349 +5,345 @@ exports[`Home page matches snapshot 1`] = `
   <div
     class="mx-36"
   >
-    <ul
-      class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+    <div
+      class="MuiBox-root css-uwvihb"
     >
       <div
-        class="MuiBox-root css-uwvihb"
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+        data-testid="select"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
-          data-testid="select"
+          aria-controls=":r0:"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+          role="combobox"
+          tabindex="0"
         >
-          <div
-            aria-controls=":r0:"
-            aria-expanded="false"
-            aria-haspopup="listbox"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            role="combobox"
-            tabindex="0"
-          >
-            Incompleted
-          </div>
-          <input
-            aria-hidden="true"
-            aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-            tabindex="-1"
-            value="Incompleted"
+          Incompleted
+        </div>
+        <input
+          aria-hidden="true"
+          aria-invalid="false"
+          class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+          tabindex="-1"
+          value="Incompleted"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+          data-testid="ArrowDropDownIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
           />
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-            data-testid="ArrowDropDownIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+        </svg>
+        <fieldset
+          aria-hidden="true"
+          class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            class="css-ihdtdm"
           >
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ihdtdm"
+            <span
+              class="notranslate"
             >
-              <span
-                class="notranslate"
-              >
-                ​
-              </span>
-            </legend>
-          </fieldset>
-        </div>
+              ​
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
+    <div
+      class="flex my-2 h-20 shadow-md"
+      data-testid="todoitem-card"
+    >
+      <div
+        class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
+        data-testid="todoitem-checkbox-0"
+      >
+        <input
+          class=" opacity-0 w-11 h-20 absolute cursor-pointer"
+          type="checkbox"
+        />
+        <svg
+          class="size-6"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
       </div>
       <div
-        class="flex my-2 h-20 shadow-md"
-        data-testid="todoitem-card"
+        class="flex-1 py-3"
       >
-        <div
-          class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
-          data-testid="todoitem-checkbox-0"
+        <p
+          class="text-2xl no-underline"
+          data-testid="todoitem-title-0"
         >
-          <input
-            class=" opacity-0 w-11 h-20 absolute cursor-pointer"
-            type="checkbox"
+          TechStack
+        </p>
+        <p
+          class="no-underline"
+          data-testid="todoitem-description-0"
+        >
+          describe below TechStack
+        </p>
+      </div>
+      <button
+        class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
+        data-testid="todoitem-delete-button-0"
+        type="button"
+      >
+        <svg
+          class="size-6 text-slate-500"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
           />
-          <svg
-            class="size-6"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex-1 py-3"
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex my-2 h-20 shadow-md"
+      data-testid="todoitem-card"
+    >
+      <div
+        class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
+        data-testid="todoitem-checkbox-1"
+      >
+        <input
+          class=" opacity-0 w-11 h-20 absolute cursor-pointer"
+          type="checkbox"
+        />
+        <svg
+          class="size-6"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <p
-            class="text-2xl no-underline"
-            data-testid="todoitem-title-0"
-          >
-            TechStack
-          </p>
-          <p
-            class="no-underline"
-            data-testid="todoitem-description-0"
-          >
-            describe below TechStack
-          </p>
-        </div>
-        <button
-          class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
-          data-testid="todoitem-delete-button-0"
-          type="button"
-        >
-          <svg
-            class="size-6 text-slate-500"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-          </svg>
-        </button>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
       </div>
       <div
-        class="flex my-2 h-20 shadow-md"
-        data-testid="todoitem-card"
+        class="flex-1 py-3"
       >
-        <div
-          class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
-          data-testid="todoitem-checkbox-1"
+        <p
+          class="text-2xl no-underline"
+          data-testid="todoitem-title-1"
         >
-          <input
-            class=" opacity-0 w-11 h-20 absolute cursor-pointer"
-            type="checkbox"
+          Next.js
+        </p>
+        <p
+          class="no-underline"
+          data-testid="todoitem-description-1"
+        >
+          React Framework
+        </p>
+      </div>
+      <button
+        class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
+        data-testid="todoitem-delete-button-1"
+        type="button"
+      >
+        <svg
+          class="size-6 text-slate-500"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
           />
-          <svg
-            class="size-6"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex-1 py-3"
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex my-2 h-20 shadow-md"
+      data-testid="todoitem-card"
+    >
+      <div
+        class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
+        data-testid="todoitem-checkbox-2"
+      >
+        <input
+          class=" opacity-0 w-11 h-20 absolute cursor-pointer"
+          type="checkbox"
+        />
+        <svg
+          class="size-6"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <p
-            class="text-2xl no-underline"
-            data-testid="todoitem-title-1"
-          >
-            Next.js
-          </p>
-          <p
-            class="no-underline"
-            data-testid="todoitem-description-1"
-          >
-            React Framework
-          </p>
-        </div>
-        <button
-          class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
-          data-testid="todoitem-delete-button-1"
-          type="button"
-        >
-          <svg
-            class="size-6 text-slate-500"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-          </svg>
-        </button>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
       </div>
       <div
-        class="flex my-2 h-20 shadow-md"
-        data-testid="todoitem-card"
+        class="flex-1 py-3"
       >
-        <div
-          class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
-          data-testid="todoitem-checkbox-2"
+        <p
+          class="text-2xl no-underline"
+          data-testid="todoitem-title-2"
         >
-          <input
-            class=" opacity-0 w-11 h-20 absolute cursor-pointer"
-            type="checkbox"
+          Redux Toolkit
+        </p>
+        <p
+          class="no-underline"
+          data-testid="todoitem-description-2"
+        >
+          Statement Management
+        </p>
+      </div>
+      <button
+        class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
+        data-testid="todoitem-delete-button-2"
+        type="button"
+      >
+        <svg
+          class="size-6 text-slate-500"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
           />
-          <svg
-            class="size-6"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex-1 py-3"
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex my-2 h-20 shadow-md"
+      data-testid="todoitem-card"
+    >
+      <div
+        class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
+        data-testid="todoitem-checkbox-3"
+      >
+        <input
+          class=" opacity-0 w-11 h-20 absolute cursor-pointer"
+          type="checkbox"
+        />
+        <svg
+          class="size-6"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <p
-            class="text-2xl no-underline"
-            data-testid="todoitem-title-2"
-          >
-            Redux Toolkit
-          </p>
-          <p
-            class="no-underline"
-            data-testid="todoitem-description-2"
-          >
-            Statement Management
-          </p>
-        </div>
-        <button
-          class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
-          data-testid="todoitem-delete-button-2"
-          type="button"
-        >
-          <svg
-            class="size-6 text-slate-500"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-          </svg>
-        </button>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
       </div>
       <div
-        class="flex my-2 h-20 shadow-md"
-        data-testid="todoitem-card"
+        class="flex-1 py-3"
       >
-        <div
-          class="h-20 w-11 flex items-center justify-center text-slate-500  rounded-full hover:bg-slate-200"
-          data-testid="todoitem-checkbox-3"
+        <p
+          class="text-2xl no-underline"
+          data-testid="todoitem-title-3"
         >
-          <input
-            class=" opacity-0 w-11 h-20 absolute cursor-pointer"
-            type="checkbox"
-          />
-          <svg
-            class="size-6"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex-1 py-3"
+          Material-UI
+        </p>
+        <p
+          class="no-underline"
+          data-testid="todoitem-description-3"
         >
-          <p
-            class="text-2xl no-underline"
-            data-testid="todoitem-title-3"
-          >
-            Material-UI
-          </p>
-          <p
-            class="no-underline"
-            data-testid="todoitem-description-3"
-          >
-            UI Framework
-          </p>
-        </div>
-        <button
-          class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
-          data-testid="todoitem-delete-button-3"
-          type="button"
-        >
-          <svg
-            class="size-6 text-slate-500"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-            />
-          </svg>
-        </button>
+          UI Framework
+        </p>
       </div>
-    </ul>
+      <button
+        class="px-3 hover:bg-slate-200 hover-text-slate-600 rounded-full"
+        data-testid="todoitem-delete-button-3"
+        type="button"
+      >
+        <svg
+          class="size-6 text-slate-500"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+          />
+        </svg>
+      </button>
+    </div>
     <div>
       <button
         aria-label="add"
