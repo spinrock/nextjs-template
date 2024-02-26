@@ -60,7 +60,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "29.5.12",
     "@types/node": "20.11.20",
-    "@types/react": "18.2.58",
+    "@types/react": "18.2.59",
     "@types/uuid": "9.0.8",
     "@typescript-eslint/eslint-plugin": "7.1.0",
     "@typescript-eslint/parser": "7.1.0",
