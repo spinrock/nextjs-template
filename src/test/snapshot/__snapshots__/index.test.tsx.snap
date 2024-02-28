@@ -3,7 +3,7 @@
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="mx-36"
+    class="md:mx-36 mx-4"
   >
     <div
       class="flex justify-end"

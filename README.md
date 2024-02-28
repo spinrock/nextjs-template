@@ -21,4 +21,10 @@ yarn create next-app <your-app-name> --example https://github.com/spinrock/nextj
 
 ## サンプルイメージ
 
+- PCサイズのイメージ
+
   <img src="./README_IMG/PC_IMG.png" >
+
+- スマホサイズのイメージ
+
+  <img src="./README_IMG/SP_IMG.png" width="375" height="667">
