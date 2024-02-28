@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-import List from '@mui/material/List'
 import { Todo } from '../../interface'
 import TodoFilter from './components/TodoFilter'
 import TodoItem from './components/TodoItem'
@@ -19,7 +18,7 @@ const TodoList: React.FC = () => {
   }
 
   return (
-    <List>
+    <>
       <TodoFilter
         filterState={filterState}
         callbackOnChengeFunction={callbackFilterState}
@@ -27,7 +26,7 @@ const TodoList: React.FC = () => {
       {viewTodoList.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
       ))}
-    </List>
+    </>
   )
 }
 
