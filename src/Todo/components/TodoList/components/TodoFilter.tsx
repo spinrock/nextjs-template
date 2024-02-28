@@ -23,7 +23,7 @@ const TodoFilter: React.FC<Props> = ({
   const handleClickSelectItem = (menuValue: string) => {
     callbackOnChengeFunction(
       menuItemList.find((menuItem) => menuItem.menuValue === menuValue)
-        ?.stateValue || null,
+        ?.stateValue ?? null,
     )
   }
 
@@ -40,7 +40,7 @@ const TodoFilter: React.FC<Props> = ({
           data-testid="select-button-title"
         >
           {menuItemList.find((menuItem) => menuItem.stateValue === filterState)
-            ?.menuValue || 'ALL'}
+            ?.menuValue ?? 'ALL'}
         </p>
         {isToggleOpen ? (
           <MdArrowDropUp className=" size-6 my-auto mr-1" />
