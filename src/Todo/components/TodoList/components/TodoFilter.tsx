@@ -8,8 +8,8 @@ const menuItemList = [
 ]
 
 type Props = {
-  filterState: boolean
-  callbackOnChengeFunction: (state: boolean) => void
+  filterState: boolean | null
+  callbackOnChengeFunction: (state: boolean | null) => void
 }
 
 const TodoFilter: React.FC<Props> = ({
@@ -23,7 +23,7 @@ const TodoFilter: React.FC<Props> = ({
   const handleClickSelectItem = (menuValue: string) => {
     callbackOnChengeFunction(
       menuItemList.find((menuItem) => menuItem.menuValue === menuValue)
-        .stateValue,
+        ?.stateValue ?? null,
     )
   }
 
@@ -39,10 +39,8 @@ const TodoFilter: React.FC<Props> = ({
           className="flex-grow pl-3 leading-[56px]"
           data-testid="select-button-title"
         >
-          {
-            menuItemList.find((menuItem) => menuItem.stateValue === filterState)
-              .menuValue
-          }
+          {menuItemList.find((menuItem) => menuItem.stateValue === filterState)
+            ?.menuValue ?? 'ALL'}
         </p>
         {isToggleOpen ? (
           <MdArrowDropUp className=" size-6 my-auto mr-1" />

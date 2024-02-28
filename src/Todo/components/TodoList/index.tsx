@@ -6,14 +6,14 @@ import TodoItem from './components/TodoItem'
 import { RootState } from '../../../rootReducer'
 
 const TodoList: React.FC = () => {
-  const [filterState, setFilterState] = useState(false)
+  const [filterState, setFilterState] = useState<boolean | null>(false)
   const todoList: Todo[] = useSelector((state: RootState) => state.todo)
   const viewTodoList =
     filterState != null
       ? todoList.filter((todo) => todo.completed === filterState)
       : todoList
 
-  const callbackFilterState = (state: boolean) => {
+  const callbackFilterState = (state: boolean | null) => {
     setFilterState(state)
   }
 
