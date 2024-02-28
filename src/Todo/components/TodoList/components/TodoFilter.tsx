@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdArrowDropDown } from 'react-icons/md'
 import { styled } from '@mui/material/styles'
 import MenuItem from '@mui/material/MenuItem'
 import Select from '@mui/material/Select'
@@ -23,9 +24,7 @@ const TodoFilter: React.FC<Props> = ({
   filterState,
   callbackOnChengeFunction,
 }: Props) => (
-  <div
-    className='flex justify-end'
-  >
+  <div className="flex justify-end">
     <StyledSelect
       value={
         menuItemList.find((menuItem) => menuItem.stateValue === filterState)
@@ -46,6 +45,19 @@ const TodoFilter: React.FC<Props> = ({
         </MenuItem>
       ))}
     </StyledSelect>
+    <div
+      role="combobox"
+      tabIndex={0}
+      className="flex w-40 h-14 pl-3 leading-[56px] border-slate-300 border-[1px] rounded-md hover:cursor-pointer hover:border-slate-500"
+    >
+      <p className="flex-grow">
+        {
+          menuItemList.find((menuItem) => menuItem.stateValue === filterState)
+            .menuValue
+        }
+      </p>
+      <MdArrowDropDown className=" size-6 my-auto" />
+    </div>
   </div>
 )
 
