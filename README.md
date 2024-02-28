@@ -7,7 +7,7 @@ Next.js with Typescript の個人用テンプレートとなります
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Material-UI](https://material-ui.com/ja/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## 使い方
 
@@ -21,7 +21,4 @@ yarn create next-app <your-app-name> --example https://github.com/spinrock/nextj
 
 ## サンプルイメージ
 
-- PC サイズの場合  
   <img src="./README_IMG/PC_IMG.png" >
-- スマホサイズの場合  
-  <img src="./README_IMG/SP_IMG.png" width="375" height="812" >
