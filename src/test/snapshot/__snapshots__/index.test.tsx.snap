@@ -9,51 +9,34 @@ exports[`Home page matches snapshot 1`] = `
       class="flex justify-end"
     >
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1a9pob2-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
-        data-testid="select"
+        class=" relative flex w-40 h-14 border-slate-300 border-[1px] rounded-md select-none hover:cursor-pointer hover:border-slate-500"
+        role="combobox"
+        tabindex="0"
       >
-        <div
-          aria-controls=":r0:"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-          role="combobox"
-          tabindex="0"
+        <p
+          class="flex-grow pl-3 leading-[56px]"
+          data-testid="select-button-title"
         >
           Incompleted
-        </div>
-        <input
-          aria-hidden="true"
-          aria-invalid="false"
-          class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-          tabindex="-1"
-          value="Incompleted"
-        />
+        </p>
         <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-          data-testid="ArrowDropDownIcon"
-          focusable="false"
+          class=" size-6 my-auto mr-1"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
           viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="m7 10 5 5 5-5z"
           />
         </svg>
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ihdtdm"
-          >
-            <span
-              class="notranslate"
-            >
-              ​
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div

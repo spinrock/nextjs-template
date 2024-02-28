@@ -22,7 +22,7 @@ describe('Common Test', () => {
     )
 
     const expectedSelectButtonTitle = 'ALL'
-    expect(screen.getByRole('combobox').innerHTML).toEqual(
+    expect(screen.getByTestId('select-button-title').innerHTML).toEqual(
       expectedSelectButtonTitle,
     )
   })
@@ -38,7 +38,7 @@ describe('Common Test', () => {
     )
 
     const expectedSelectButtonTitle = 'Incompleted'
-    expect(screen.getByRole('combobox').innerHTML).toEqual(
+    expect(screen.getByTestId('select-button-title').innerHTML).toEqual(
       expectedSelectButtonTitle,
     )
   })
@@ -54,7 +54,7 @@ describe('Common Test', () => {
     )
 
     const expectedSelectButtonTitle = 'Completed'
-    expect(screen.getByRole('combobox').innerHTML).toEqual(
+    expect(screen.getByTestId('select-button-title').innerHTML).toEqual(
       expectedSelectButtonTitle,
     )
   })
