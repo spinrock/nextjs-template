@@ -8,6 +8,7 @@ Next.js with Typescript の個人用テンプレートとなります
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Biome Formatter](https://biomejs.dev/ja/formatter/)
 
 ## 使い方
 
@@ -21,7 +22,7 @@ yarn create next-app <your-app-name> --example https://github.com/spinrock/nextj
 
 ## サンプルイメージ
 
-- PCサイズのイメージ
+- PC サイズのイメージ
 
   <img src="./README_IMG/PC_IMG.png" >
 
