@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { RootState } from '../../../rootReducer'
 import { Todo } from '../../interface'
 import TodoFilter from './components/TodoFilter'
 import TodoItem from './components/TodoItem'
-import { RootState } from '../../../rootReducer'
 
 const TodoList: React.FC = () => {
   const [filterState, setFilterState] = useState<boolean | null>(false)

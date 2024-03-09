@@ -4,11 +4,11 @@ Next.js with Typescript の個人用テンプレートとなります
 
 ## 利用しているライブラリ群
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Biome Formatter](https://biomejs.dev/ja/formatter/)
+- App フレームワーク : [Next.js](https://nextjs.org/)
+- 言語 : [TypeScript](https://www.typescriptlang.org/)
+- 状態管理 : [Redux Toolkit](https://redux-toolkit.js.org/)
+- CSS フレームワーク : [Tailwind CSS](https://tailwindcss.com/)
+- Linter & Formatter : [Biome](https://biomejs.dev/ja/formatter/)
 
 ## 使い方
 

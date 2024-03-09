@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Provider } from 'react-redux'
 import store from '../../../../rootStore'
-import TodoItem from './TodoItem'
 import { Todo } from '../../../interface'
+import TodoItem from './TodoItem'
 
 const meta: Meta<typeof TodoItem> = {
   title: 'Todo/TodoItem',

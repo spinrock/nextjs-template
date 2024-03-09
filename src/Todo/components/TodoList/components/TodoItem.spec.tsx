@@ -1,13 +1,14 @@
 /**
  * @jest-environment jsdom
  */
-import React from 'react'
-import { render, screen } from '../../../../test/testUtils'
+
 import '@testing-library/jest-dom'
+import React from 'react'
 import { Provider } from 'react-redux'
 import store from '../../../../rootStore'
-import TodoItem from './TodoItem'
+import { render, screen } from '../../../../test/testUtils'
 import { Todo } from '../../../interface'
+import TodoItem from './TodoItem'
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',

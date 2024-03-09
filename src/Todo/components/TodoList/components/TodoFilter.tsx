@@ -27,6 +27,8 @@ const TodoFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: 
     <div className="flex justify-end">
       <div
         role="combobox"
+        aria-controls="todo-filter"
+        aria-expanded={isToggleOpen}
         tabIndex={0}
         className=" relative flex w-40 h-14 border-slate-300 border-[1px] rounded-md select-none hover:cursor-pointer hover:border-slate-500"
         onClick={handleClickSelect}

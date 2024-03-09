@@ -9,6 +9,8 @@ exports[`Home page matches snapshot 1`] = `
       class="flex justify-end"
     >
       <div
+        aria-controls="todo-filter"
+        aria-expanded="false"
         class=" relative flex w-40 h-14 border-slate-300 border-[1px] rounded-md select-none hover:cursor-pointer hover:border-slate-500"
         role="combobox"
         tabindex="0"
