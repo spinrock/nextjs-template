@@ -1,5 +1,5 @@
-import React from 'react'
 import Link from 'next/link'
+import React from 'react'
 
 const Footer: React.FC = () => (
   <div className="mt-3 h-10 flex justify-center border-t-2 border-slate-200">

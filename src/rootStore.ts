@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import reducer from './rootReducer'
 import { TodoState } from './Todo/store'
+import reducer from './rootReducer'
 
 export type StoreState = {
   todo: TodoState

@@ -3,10 +3,10 @@
  */
 
 import React from 'react'
-import { render } from '../testUtils'
-import IndexPage from '../../app/page'
 import { Provider } from 'react-redux'
+import IndexPage from '../../app/page'
 import store from '../../rootStore'
+import { render } from '../testUtils'
 
 describe('Home page', () => {
   it('matches snapshot', () => {

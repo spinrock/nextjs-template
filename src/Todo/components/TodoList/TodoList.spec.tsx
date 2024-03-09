@@ -1,14 +1,15 @@
 /**
  * @jest-environment jsdom
  */
-import React from 'react'
-import { render, screen } from '../../../test/testUtils'
+
 import '@testing-library/jest-dom'
 import userEvent from '@testing-library/user-event'
+import React from 'react'
 import { Provider } from 'react-redux'
 import store from '../../../rootStore'
-import TodoList from './index'
+import { render, screen } from '../../../test/testUtils'
 import { Todo } from '../../interface'
+import TodoList from './index'
 
 describe('Common Test', () => {
   beforeEach(() => {
