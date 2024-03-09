@@ -1,10 +1,5 @@
 import { Todo } from '../interface'
-import reducer, {
-  addTodo,
-  toggleTodo,
-  deleteTodo,
-  updateTodo,
-} from '../reducer'
+import reducer, { addTodo, toggleTodo, deleteTodo, updateTodo } from '../reducer'
 jest.mock('uuid', () => ({ v4: () => todo01.id }))
 
 // Sample DataSet
@@ -202,10 +197,7 @@ describe('updateTodo Test', () => {
 
   it('Update description', () => {
     const actual = [todo00, todo01]
-    const expected = [
-      { ...todo00, description: 'this is update description' },
-      todo01,
-    ]
+    const expected = [{ ...todo00, description: 'this is update description' }, todo01]
     expect(
       reducer(actual, {
         type: updateTodo.type,
@@ -238,11 +230,7 @@ describe('updateTodo Test', () => {
 
   it('Update childrenTaskId', () => {
     const actual = [todo00, todo01, todo02]
-    const expected = [
-      todo00,
-      todo01,
-      { ...todo02, childrenTaskIds: [todo00.id, todo01.id] },
-    ]
+    const expected = [todo00, todo01, { ...todo02, childrenTaskIds: [todo00.id, todo01.id] }]
     expect(
       reducer(actual, {
         type: updateTodo.type,
@@ -255,11 +243,7 @@ describe('updateTodo Test', () => {
   })
 
   it('Update childrenTaskId (update [] value)', () => {
-    const actual = [
-      todo00,
-      todo01,
-      { ...todo02, childrenTaskIds: [todo00.id, todo01.id] },
-    ]
+    const actual = [todo00, todo01, { ...todo02, childrenTaskIds: [todo00.id, todo01.id] }]
     const expected = [todo00, todo01, todo02]
     expect(
       reducer(actual, {
@@ -305,11 +289,7 @@ describe('updateTodo Test', () => {
       todo01,
       { ...todo02, parentTaskId: todo00.id, childrenTaskIds: [todo01.id] },
     ]
-    const expected = [
-      todo00,
-      todo01,
-      { ...todo02, childrenTaskIds: [todo01.id] },
-    ]
+    const expected = [todo00, todo01, { ...todo02, childrenTaskIds: [todo01.id] }]
     expect(
       reducer(actual, {
         type: updateTodo.type,

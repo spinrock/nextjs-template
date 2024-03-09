@@ -9,9 +9,7 @@ const TodoList: React.FC = () => {
   const [filterState, setFilterState] = useState<boolean | null>(false)
   const todoList: Todo[] = useSelector((state: RootState) => state.todo)
   const viewTodoList =
-    filterState != null
-      ? todoList.filter((todo) => todo.completed === filterState)
-      : todoList
+    filterState != null ? todoList.filter((todo) => todo.completed === filterState) : todoList
 
   const callbackFilterState = (state: boolean | null) => {
     setFilterState(state)
@@ -19,10 +17,7 @@ const TodoList: React.FC = () => {
 
   return (
     <>
-      <TodoFilter
-        filterState={filterState}
-        callbackOnChengeFunction={callbackFilterState}
-      />
+      <TodoFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
       {viewTodoList.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
       ))}

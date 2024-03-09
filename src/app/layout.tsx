@@ -10,9 +10,7 @@ export const metadata: Metadata = {
   description: 'This is Next.js Sample Template',
 }
 
-const RootLayout: React.FC<RootLayoutProps> = ({
-  children,
-}: RootLayoutProps) => (
+const RootLayout: React.FC<RootLayoutProps> = ({ children }: RootLayoutProps) => (
   <html lang="ja">
     <body>
       <ReduxProvider>

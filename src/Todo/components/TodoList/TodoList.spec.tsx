@@ -20,21 +20,17 @@ describe('Common Test', () => {
   })
 
   it('Check TodoList Length', () => {
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(
-      store.getState().todo.length,
-    )
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length)
   })
 
   it.each(store.getState().todo)('', (todo: Todo) => {
     const expectedTitle = todo.title
     const expectedDescription = todo.description
 
-    expect(screen.getByTestId(`todoitem-title-${todo.id}`).innerHTML).toEqual(
-      expectedTitle,
+    expect(screen.getByTestId(`todoitem-title-${todo.id}`).innerHTML).toEqual(expectedTitle)
+    expect(screen.getByTestId(`todoitem-description-${todo.id}`).innerHTML).toEqual(
+      expectedDescription,
     )
-    expect(
-      screen.getByTestId(`todoitem-description-${todo.id}`).innerHTML,
-    ).toEqual(expectedDescription)
   })
 })
 
@@ -48,23 +44,17 @@ describe('Checked Todo Test', () => {
       </Provider>,
     )
     await userEvent.click(
-      screen
-        .getByTestId(targetCheckboxId)
-        .querySelector("input[type='checkbox']"),
+      screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"),
     )
   })
 
   it('Check TodoList Length', async () => {
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(
-      store.getState().todo.length - 1,
-    )
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 1)
 
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('ALL'))
     await userEvent.click(
-      screen
-        .getByTestId(targetCheckboxId)
-        .querySelector("input[type='checkbox']"),
+      screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"),
     )
   })
 
@@ -72,14 +62,10 @@ describe('Checked Todo Test', () => {
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('ALL'))
 
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(
-      store.getState().todo.length,
-    )
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length)
 
     await userEvent.click(
-      screen
-        .getByTestId(targetCheckboxId)
-        .querySelector("input[type='checkbox']"),
+      screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"),
     )
   })
 
@@ -87,16 +73,12 @@ describe('Checked Todo Test', () => {
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('Completed'))
 
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(
-      store.getState().todo.length - 3,
-    )
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 3)
 
     await userEvent.click(screen.getAllByText('Completed')[0])
     await userEvent.click(screen.getByText('ALL'))
     await userEvent.click(
-      screen
-        .getByTestId(targetCheckboxId)
-        .querySelector("input[type='checkbox']"),
+      screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"),
     )
   })
 })

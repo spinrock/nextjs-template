@@ -1,0 +1,12 @@
+{
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "asNeeded",
+      "indentStyle": "space",
+      "indentWidth": 2
+    }
+  }
+}
