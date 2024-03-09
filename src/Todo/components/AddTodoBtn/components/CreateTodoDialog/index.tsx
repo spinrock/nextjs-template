@@ -71,7 +71,7 @@ const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
         <div className="flex gap-3 my-4 justify-center">
           <button
             type="button"
-            disabled={title == ''}
+            disabled={title === ''}
             onClick={addTodoFunc}
             className="h-10 px-3 rounded-md bg-slate-200 hover:bg-slate-300 disabled:bg-gray-200 disabled:text-gray-400"
           >
