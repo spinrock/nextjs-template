@@ -12,18 +12,14 @@ type Props = {
   callbackOnChengeFunction: (state: boolean | null) => void
 }
 
-const TodoFilter: React.FC<Props> = ({
-  filterState,
-  callbackOnChengeFunction,
-}: Props) => {
+const TodoFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: Props) => {
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false)
   const handleClickSelect = () => {
     setIsToggleOpen(!isToggleOpen)
   }
   const handleClickSelectItem = (menuValue: string) => {
     callbackOnChengeFunction(
-      menuItemList.find((menuItem) => menuItem.menuValue === menuValue)
-        ?.stateValue ?? null,
+      menuItemList.find((menuItem) => menuItem.menuValue === menuValue)?.stateValue ?? null,
     )
   }
 
@@ -35,12 +31,8 @@ const TodoFilter: React.FC<Props> = ({
         className=" relative flex w-40 h-14 border-slate-300 border-[1px] rounded-md select-none hover:cursor-pointer hover:border-slate-500"
         onClick={handleClickSelect}
       >
-        <p
-          className="flex-grow pl-3 leading-[56px]"
-          data-testid="select-button-title"
-        >
-          {menuItemList.find((menuItem) => menuItem.stateValue === filterState)
-            ?.menuValue ?? 'ALL'}
+        <p className="flex-grow pl-3 leading-[56px]" data-testid="select-button-title">
+          {menuItemList.find((menuItem) => menuItem.stateValue === filterState)?.menuValue ?? 'ALL'}
         </p>
         {isToggleOpen ? (
           <MdArrowDropUp className=" size-6 my-auto mr-1" />

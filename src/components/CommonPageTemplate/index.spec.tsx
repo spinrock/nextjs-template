@@ -19,15 +19,11 @@ describe('Common Test', () => {
 
   it('Check Header Title', () => {
     const expectedHeaderTitle = 'This is Next.js Template'
-    expect(screen.getByTestId('header-title').innerHTML).toEqual(
-      expectedHeaderTitle,
-    )
+    expect(screen.getByTestId('header-title').innerHTML).toEqual(expectedHeaderTitle)
   })
 
   it('Check ReactComponent', () => {
     const expectedDummyComponentText = dummyComponentText
-    expect(screen.getByTestId('dummy-component').innerHTML).toEqual(
-      expectedDummyComponentText,
-    )
+    expect(screen.getByTestId('dummy-component').innerHTML).toEqual(expectedDummyComponentText)
   })
 })

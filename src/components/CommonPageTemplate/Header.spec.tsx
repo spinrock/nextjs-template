@@ -15,8 +15,6 @@ describe('Common Test', () => {
 
   it('Check Header Title', () => {
     const expectedHeaderTitle = dummyTitle
-    expect(screen.getByTestId('header-title').innerHTML).toEqual(
-      expectedHeaderTitle,
-    )
+    expect(screen.getByTestId('header-title').innerHTML).toEqual(expectedHeaderTitle)
   })
 })

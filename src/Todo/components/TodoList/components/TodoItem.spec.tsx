@@ -29,30 +29,26 @@ describe('Common Test', () => {
 
   it('Check Todo Title', () => {
     const expectedTitle = dummyTodo.title
-    expect(
-      screen.getByTestId(`todoitem-title-${dummyTodo.id}`).innerHTML,
-    ).toEqual(expectedTitle)
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`).innerHTML).toEqual(expectedTitle)
   })
 
   it('Check Todo Title Style', () => {
     const expectedTitleStyle = 'no-underline'
-    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(
-      expectedTitleStyle,
-    )
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(expectedTitleStyle)
   })
 
   it('Check Todo Description', () => {
     const expectedDescription = dummyTodo.description
-    expect(
-      screen.getByTestId(`todoitem-description-${dummyTodo.id}`).innerHTML,
-    ).toEqual(expectedDescription)
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`).innerHTML).toEqual(
+      expectedDescription,
+    )
   })
 
   it('Check Todo Description Style', () => {
     const expectedDescriptionStyle = 'no-underline'
-    expect(
-      screen.getByTestId(`todoitem-description-${dummyTodo.id}`),
-    ).toHaveClass(expectedDescriptionStyle)
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`)).toHaveClass(
+      expectedDescriptionStyle,
+    )
   })
 })
 
@@ -67,15 +63,13 @@ describe('Completed Todo Test', () => {
 
   it('Check Todo Title Style', () => {
     const expectedTitleStyle = 'line-through'
-    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(
-      expectedTitleStyle,
-    )
+    expect(screen.getByTestId(`todoitem-title-${dummyTodo.id}`)).toHaveClass(expectedTitleStyle)
   })
 
   it('Check Todo Description Style', () => {
     const expectedDescriptionStyle = 'line-through'
-    expect(
-      screen.getByTestId(`todoitem-description-${dummyTodo.id}`),
-    ).toHaveClass(expectedDescriptionStyle)
+    expect(screen.getByTestId(`todoitem-description-${dummyTodo.id}`)).toHaveClass(
+      expectedDescriptionStyle,
+    )
   })
 })

@@ -38,19 +38,12 @@ const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
     closeDialog()
   }
 
-  const stopPropagation = useCallback(
-    (event: React.MouseEvent<HTMLDivElement>): void => {
-      event.stopPropagation()
-    },
-    [],
-  )
+  const stopPropagation = useCallback((event: React.MouseEvent<HTMLDivElement>): void => {
+    event.stopPropagation()
+  }, [])
 
   return (
-    <dialog
-      className=" h-56 w-72 rounded-lg"
-      ref={dialogRef}
-      onClick={closeDialog}
-    >
+    <dialog className=" h-56 w-72 rounded-lg" ref={dialogRef} onClick={closeDialog}>
       <div className="px-4 h-56 w-72" onClick={stopPropagation}>
         <div className="flex justify-center py-4">
           <p className="text-xl">Please Input Todo Property</p>

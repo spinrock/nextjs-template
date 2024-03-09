@@ -10,8 +10,7 @@ test.describe('Filter Todos(default)', () => {
     const expectedTodoLength = 4
 
     // Act
-    const actualTodoSize = (await page.getByTestId('todoitem-card').all())
-      .length
+    const actualTodoSize = (await page.getByTestId('todoitem-card').all()).length
 
     // Assert
     expect(actualTodoSize).toBe(expectedTodoLength)
@@ -24,8 +23,7 @@ test.describe('Filter Todos(default)', () => {
     // Act
     await page.getByText('Incompleted').click()
     await page.getByText('ALL').click()
-    const actualTodoSize = (await page.getByTestId('todoitem-card').all())
-      .length
+    const actualTodoSize = (await page.getByTestId('todoitem-card').all()).length
 
     // Assert
     expect(actualTodoSize).toBe(expectedTodoLength)
@@ -38,8 +36,7 @@ test.describe('Filter Todos(default)', () => {
     // Act
     await page.getByText('Incompleted').click()
     await page.getByText(/Completed/).click()
-    const actualTodoSize = (await page.getByTestId('todoitem-card').all())
-      .length
+    const actualTodoSize = (await page.getByTestId('todoitem-card').all()).length
 
     // Assert
     expect(actualTodoSize).toBe(expectedTodoLength)
