@@ -1,7 +1,7 @@
 'use client'
 
 import { Provider } from 'react-redux'
-import store from '../../rootStore'
+import store from '../../src/rootStore'
 
 type ReduxProviderProps = React.PropsWithChildren
 

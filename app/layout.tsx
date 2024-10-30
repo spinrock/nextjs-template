@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import CommonPageTemplate from '../components/CommonPageTemplate'
-import '../globals.css'
+import CommonPageTemplate from '../src/components/CommonPageTemplate'
+import '../src/app/styles/globals.css'
 import ReduxProvider from './_providers/ReduxProvider'
 
 type RootLayoutProps = React.PropsWithChildren

@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Provider } from 'react-redux'
-import IndexPage from '../../app/page'
+import IndexPage from '../../../app/page'
 import store from '../../rootStore'
 import { render } from '../testUtils'
 

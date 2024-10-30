@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import AddTodoBtn from '../Todo/components/AddTodoBtn'
-import TodoList from '../Todo/components/TodoList'
+import AddTodoBtn from '../src/Todo/components/AddTodoBtn'
+import TodoList from '../src/Todo/components/TodoList'
 
 const IndexPage: React.FC = () => (
   <div className="md:mx-36 mx-4">
