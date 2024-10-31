@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react'
-import React from 'react'
-import Header from './Header'
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import React from 'react';
+import Header from './Header';
 
 const dummyTitle = 'Dummy Title'
 

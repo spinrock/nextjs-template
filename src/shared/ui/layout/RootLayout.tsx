@@ -1,4 +1,4 @@
-import CommonPageTemplate from '../../../components/CommonPageTemplate';
+import CommonPageTemplate from '../CommonPageTemplate';
 import '../../../app/styles/globals.css';
 import ReduxProvider from '../../../app/providers/ReduxProvider';
 
