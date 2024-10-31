@@ -5,7 +5,7 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import CommonPageTemplate from './CommonPageTemplate';
+import CommonPageTemplate from '@/shared/ui/CommonPageTemplate';
 
 const dummyComponentText = 'Dummy Component'
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import Footer from '@/shared/ui/Footer';
-import Header from '@/shared/ui/Header';
+import { Footer, Header } from '@/shared/ui';
 
 type CommonPageTemplateProps = {
   children: React.ReactNode
