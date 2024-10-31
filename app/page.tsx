@@ -1,5 +1,5 @@
 import React from 'react';
-import TaskListPage from '../src/pages/tasksList';
+import TaskListPage from '@/pages/tasksList';
 
 const IndexPage: React.FC = () => (<TaskListPage />);
 

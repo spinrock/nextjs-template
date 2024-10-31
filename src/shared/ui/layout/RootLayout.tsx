@@ -1,6 +1,6 @@
-import CommonPageTemplate from '../CommonPageTemplate';
-import '../../../app/styles/globals.css';
-import ReduxProvider from '../../../app/providers/ReduxProvider';
+import ReduxProvider from '@/app/providers/ReduxProvider';
+import CommonPageTemplate from '@/shared/ui/CommonPageTemplate';
+import '@/app/styles/globals.css';
 
 type RootLayoutProps = React.PropsWithChildren;
 

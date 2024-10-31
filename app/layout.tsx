@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { rootMetadata } from '../src/shared/metadata';
-import RootLayout from '../src/shared/ui/layout/RootLayout';
+import { rootMetadata } from '@/shared/metadata';
+import RootLayout from '@/shared/ui/layout/RootLayout';
 
 export const metadata: Metadata = rootMetadata;
 
