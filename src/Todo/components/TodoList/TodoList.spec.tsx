@@ -8,7 +8,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import store from '../../../rootStore'
 import { render, screen } from '../../../test/testUtils'
-import { Todo } from '../../interface'
+import { Todo } from '../../../entities/task/model/interface'
 import TodoList from './index'
 
 describe('Common Test', () => {

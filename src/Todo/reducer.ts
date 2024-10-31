@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { v4 } from 'uuid'
-import { Todo } from './interface'
+import { Todo } from '../entities/task/model/interface'
 import { sampleTodoList } from './sampleData'
 
 const initialState: Todo[] = sampleTodoList

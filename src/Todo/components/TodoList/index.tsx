@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../rootReducer'
-import { Todo } from '../../interface'
+import { Todo } from '../../../entities/task/model/interface'
 import TodoFilter from './components/TodoFilter'
 import TodoItem from './components/TodoItem'
 

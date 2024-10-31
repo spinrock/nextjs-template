@@ -1,4 +1,4 @@
-import { Todo } from '../interface'
+import { Todo } from '../../entities/task/model/interface'
 import reducer, { addTodo, toggleTodo, deleteTodo, updateTodo } from '../reducer'
 jest.mock('uuid', () => ({ v4: () => todo01.id }))
 
