@@ -2,13 +2,20 @@
 
 Next.js with Typescript の個人用テンプレートとなります
 
-## 利用しているライブラリ群
+## 構成概要
+
+### 利用しているライブラリ群
 
 - App フレームワーク : [Next.js](https://nextjs.org/)
+  - AppRouter を採用
 - 言語 : [TypeScript](https://www.typescriptlang.org/)
 - 状態管理 : [Redux Toolkit](https://redux-toolkit.js.org/)
 - CSS フレームワーク : [Tailwind CSS](https://tailwindcss.com/)
 - Linter & Formatter : [Biome](https://biomejs.dev/ja/formatter/)
+
+### ディレクトリ構成
+
+[Features-Sliced Design(FSD)](https://feature-sliced.design/)を採用しています
 
 ## 使い方
 
@@ -22,10 +29,14 @@ yarn create next-app <your-app-name> --example https://github.com/spinrock/nextj
 
 ## サンプルイメージ
 
-- PC サイズのイメージ
+Vercel にデプロイしています
+
+- main ブランチ : https://nextjs-template-gold.vercel.app/
+
+### PC サイズのイメージ
 
   <img src="./README_IMG/PC_IMG.png" >
 
-- スマホサイズのイメージ
+### スマホサイズのイメージ
 
   <img src="./README_IMG/SP_IMG.png" width="375" height="667">
