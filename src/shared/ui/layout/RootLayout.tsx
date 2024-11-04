@@ -1,4 +1,4 @@
-import ReduxProvider from '@/app/providers/ReduxProvider';
+import { ReduxProvider } from '@/app/providers';
 import { CommonPageTemplate } from '@/shared/ui';
 import '@/app/styles/globals.css';
 
