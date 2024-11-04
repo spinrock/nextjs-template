@@ -2,12 +2,12 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom'
-import React from 'react'
-import { Provider } from 'react-redux'
-import store from '../../../../rootStore'
-import { render, screen } from '../../../../test/testUtils'
-import TodoFilter from './TodoFilter'
+import '@testing-library/jest-dom';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from '@/rootStore';
+import { render, screen } from '@/test/testUtils';
+import { TaskFilter } from '@/features/filterTask/ui';
 
 const mockCallbackOnChengeFunction = jest.fn()
 
@@ -15,7 +15,7 @@ describe('Common Test', () => {
   it('Check Select Button Title (filterState null)', () => {
     render(
       <Provider store={store}>
-        <TodoFilter filterState={null} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
+        <TaskFilter filterState={null} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
       </Provider>,
     )
 
@@ -26,7 +26,7 @@ describe('Common Test', () => {
   it('Check Select Button Title (filterState false)', () => {
     render(
       <Provider store={store}>
-        <TodoFilter filterState={false} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
+        <TaskFilter filterState={false} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
       </Provider>,
     )
 
@@ -37,7 +37,7 @@ describe('Common Test', () => {
   it('Check Select Button Title (filterState true)', () => {
     render(
       <Provider store={store}>
-        <TodoFilter filterState={true} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
+        <TaskFilter filterState={true} callbackOnChengeFunction={mockCallbackOnChengeFunction} />
       </Provider>,
     )
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../rootReducer'
-import { Todo } from '../../../entities/task/model/interface'
-import TodoFilter from './components/TodoFilter'
+import { Todo } from '@/entities/task/model/interface';
+import { TaskFilter } from '@/features/filterTask/ui'; 
 import { TaskCard } from '@/entities/task/ui';
 
 const TodoList: React.FC = () => {
@@ -17,7 +17,7 @@ const TodoList: React.FC = () => {
 
   return (
     <>
-      <TodoFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
+      <TaskFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
       {viewTodoList.map((todo) => (
         <TaskCard key={todo.id} todo={todo} />
       ))}
