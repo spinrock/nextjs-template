@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { v4 } from 'uuid'
-import { Todo } from '../entities/task/model/interface'
-import { sampleTodoList } from './sampleData'
+import { createSlice } from '@reduxjs/toolkit';
+import { v4 } from 'uuid';
+import { Todo } from './interface';
+import { sampleTodoList } from '@/Todo/sampleData';
 
-const initialState: Todo[] = sampleTodoList
+const initialState: Todo[] = sampleTodoList;
 
 const todosSlice = createSlice({
   name: 'todos',
@@ -44,8 +44,8 @@ const todosSlice = createSlice({
       }
     },
   },
-})
+});
 
-export const { addTodo, deleteTodo, updateTodo, toggleTodo } = todosSlice.actions
+export const { addTodo, deleteTodo, updateTodo, toggleTodo } = todosSlice.actions;
 
-export default todosSlice.reducer
+export default todosSlice.reducer;
