@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { TodoState } from '../../Todo/store'
-import reducer from '../../rootReducer'
+import { rootReducer } from './rootReducer';
 
 export type StoreState = {
   todo: TodoState
 }
 
-const store = configureStore({ reducer: reducer })
+const store = configureStore({ reducer: rootReducer })
 
 export default store

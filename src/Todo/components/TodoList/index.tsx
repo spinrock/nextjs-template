@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from '../../../rootReducer'
+import type { RootState } from '@/app/store';
 import { Todo } from '@/entities/task/model/interface';
 import { TaskFilter } from '@/features/filterTask/ui'; 
 import { TaskCard } from '@/entities/task/ui';
