@@ -5,7 +5,7 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import IndexPage from '../../../app/page'
-import store from '../../rootStore'
+import store from '../../app/store/rootStore'
 import { render } from '../testUtils'
 
 describe('Home page', () => {

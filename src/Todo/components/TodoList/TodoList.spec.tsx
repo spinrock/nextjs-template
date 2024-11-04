@@ -6,7 +6,7 @@ import '@testing-library/jest-dom'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 import { Provider } from 'react-redux'
-import store from '../../../rootStore'
+import { rootStore } from '@/app/store';
 import { render, screen } from '../../../test/testUtils'
 import { Todo } from '../../../entities/task/model/interface'
 import TodoList from './index'
@@ -14,17 +14,17 @@ import TodoList from './index'
 describe('Common Test', () => {
   beforeEach(() => {
     render(
-      <Provider store={store}>
+      <Provider store={rootStore}>
         <TodoList />
       </Provider>,
     )
   })
 
   it('Check TodoList Length', () => {
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length)
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(rootStore.getState().todo.length)
   })
 
-  it.each(store.getState().todo)('', (todo: Todo) => {
+  it.each(rootStore.getState().todo)('', (todo: Todo) => {
     const expectedTitle = todo.title
     const expectedDescription = todo.description
 
@@ -36,11 +36,11 @@ describe('Common Test', () => {
 })
 
 describe('Checked Todo Test', () => {
-  const targetCheckboxId = `todoitem-checkbox-${store.getState().todo[0].id}`
+  const targetCheckboxId = `todoitem-checkbox-${rootStore.getState().todo[0].id}`
 
   beforeEach(async () => {
     render(
-      <Provider store={store}>
+      <Provider store={rootStore}>
         <TodoList />
       </Provider>,
     )
@@ -50,7 +50,7 @@ describe('Checked Todo Test', () => {
   })
 
   it('Check TodoList Length', async () => {
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 1)
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(rootStore.getState().todo.length - 1)
 
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('ALL'))
@@ -63,7 +63,7 @@ describe('Checked Todo Test', () => {
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('ALL'))
 
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length)
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(rootStore.getState().todo.length)
 
     await userEvent.click(
       screen.getByTestId(targetCheckboxId).querySelector("input[type='checkbox']"),
@@ -74,7 +74,7 @@ describe('Checked Todo Test', () => {
     await userEvent.click(screen.getByText('Incompleted'))
     await userEvent.click(screen.getByText('Completed'))
 
-    expect(screen.getAllByTestId('todoitem-card').length).toEqual(store.getState().todo.length - 3)
+    expect(screen.getAllByTestId('todoitem-card').length).toEqual(rootStore.getState().todo.length - 3)
 
     await userEvent.click(screen.getAllByText('Completed')[0])
     await userEvent.click(screen.getByText('ALL'))
@@ -85,11 +85,11 @@ describe('Checked Todo Test', () => {
 })
 
 describe('Delete Todo Test', () => {
-  const targetDeleteButtonId = `todoitem-delete-button-${store.getState().todo[0].id}`
+  const targetDeleteButtonId = `todoitem-delete-button-${rootStore.getState().todo[0].id}`
 
   it('Check TodoList Length', async () => {
     render(
-      <Provider store={store}>
+      <Provider store={rootStore}>
         <TodoList />
       </Provider>,
     )

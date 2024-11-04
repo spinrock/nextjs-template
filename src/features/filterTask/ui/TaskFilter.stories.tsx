@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Provider } from 'react-redux';
-import store from '@/rootStore';
+import { rootStore } from '@/app/store';
 import { TaskFilter } from '@/features/filterTask/ui';
 
 const meta: Meta<typeof TaskFilter> = {
@@ -13,7 +13,7 @@ const meta: Meta<typeof TaskFilter> = {
       control: { type: 'radio' },
     },
   },
-  decorators: [(story) => <Provider store={store}>{story()}</Provider>],
+  decorators: [(story) => <Provider store={rootStore}>{story()}</Provider>],
 }
 
 export default meta

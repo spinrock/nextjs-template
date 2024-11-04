@@ -5,7 +5,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from '../../../rootStore';
+import store from '../../../app/store/rootStore';
 import { render, screen } from '@/test/testUtils';
 import { Todo } from '@/entities/task/model/interface';
 import { TaskCard } from '@/entities/task/ui';

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Provider } from 'react-redux';
-import store from '@/rootStore';
+import { rootStore } from '@/app/store';
 import { Todo } from '@/entities/task/model';
 import { TaskCard } from '@/entities/task/ui';
 
@@ -9,7 +9,7 @@ const meta: Meta<typeof TaskCard> = {
   component: TaskCard,
   tags: ['autodocs'],
   argTypes: {},
-  decorators: [(story) => <Provider store={store}>{story()}</Provider>],
+  decorators: [(story) => <Provider store={rootStore}>{story()}</Provider>],
 }
 
 export default meta
