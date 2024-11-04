@@ -5,42 +5,42 @@ import { addTodo } from '@/entities/task/model/reducer';
 type Props = {
   isOpen: boolean
   closeDialog: VoidFunction
-}
+};
 
-const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
-  const dialogRef = useRef<HTMLDialogElement>(null)
-  const dispatch = useDispatch()
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
+const CreateTaskDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
 
   useEffect((): void => {
-    const dialogElement = dialogRef.current
+    const dialogElement = dialogRef.current;
     if (!dialogElement) {
-      return
+      return;
     }
     if (isOpen) {
       if (dialogElement.hasAttribute('open')) {
-        return
+        return;
       }
-      dialogElement.showModal()
+      dialogElement.showModal();
     } else {
       if (!dialogElement.hasAttribute('open')) {
-        return
+        return;
       }
-      dialogElement.close()
-    }
-  }, [isOpen])
+      dialogElement.close();
+    };
+  }, [isOpen]);
 
   const addTodoFunc: VoidFunction = () => {
-    dispatch(addTodo({ title: title, description: description }))
-    setTitle('')
-    setDescription('')
-    closeDialog()
-  }
+    dispatch(addTodo({ title: title, description: description }));
+    setTitle('');
+    setDescription('');
+    closeDialog();
+  };
 
   const stopPropagation = useCallback((event: React.MouseEvent<HTMLDivElement>): void => {
-    event.stopPropagation()
-  }, [])
+    event.stopPropagation();
+  }, []);
 
   return (
     <dialog className=" h-56 w-72 rounded-lg" ref={dialogRef} onClick={closeDialog}>
@@ -87,7 +87,7 @@ const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
         </div>
       </div>
     </dialog>
-  )
-}
+  );
+};
 
-export default CreateTodoDialog
+export default CreateTaskDialog;

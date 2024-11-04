@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { TasksList } from '@/widget/tasksList';
-import AddTodoBtn from '../../Todo/components/AddTodoBtn';
+import { AddTaskBtn } from '@/features/createTask/ui';
 
 const IndexPage: React.FC = () => (
   <div className="md:mx-36 mx-4">
     <TasksList />
-    <AddTodoBtn />
+    <AddTaskBtn />
   </div>
 );
 
