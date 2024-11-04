@@ -5,8 +5,8 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from '../../../app/store/rootStore';
-import { render, screen } from '@/test/testUtils';
+import { rootStore } from '@/app/store';
+import { render, screen } from '@/shared/tests/testUtils';
 import { Todo } from '@/entities/task/model/interface';
 import { TaskCard } from '@/entities/task/ui';
 
@@ -22,7 +22,7 @@ const dummyTodo: Todo = {
 describe('Common Test', () => {
   beforeEach(() => {
     render(
-      <Provider store={store}>
+      <Provider store={rootStore}>
         <TaskCard todo={dummyTodo} />
       </Provider>,
     )
@@ -56,7 +56,7 @@ describe('Common Test', () => {
 describe('Completed Todo Test', () => {
   beforeEach(() => {
     render(
-      <Provider store={store}>
+      <Provider store={rootStore}>
         <TaskCard todo={{ ...dummyTodo, completed: true }} />
       </Provider>,
     )

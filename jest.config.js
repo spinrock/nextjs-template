@@ -3,7 +3,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
   testPathIgnorePatterns: [
     '<rootDir>[/\\\\](node_modules|.next)[/\\\\]',
-    '<rootDir>/src/test/e2e',
+    '<rootDir>/tests/e2e',
   ],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
   transform: {
@@ -15,7 +15,7 @@ module.exports = {
   ],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/src/shared/tests/__mocks__/fileMock.js',
     '^@/(.*)$': "<rootDir>/src/$1"
   },
 }

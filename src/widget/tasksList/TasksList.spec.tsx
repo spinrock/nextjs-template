@@ -7,7 +7,7 @@ import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
-import { render, screen } from '@/test/testUtils';
+import { render, screen } from '@/shared/tests/testUtils';
 import TasksList from './TasksList';
 import type { Todo } from '@/entities/task/model/interface';
 

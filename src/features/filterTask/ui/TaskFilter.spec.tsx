@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
-import { render, screen } from '@/test/testUtils';
+import { render, screen } from '@/shared/tests/testUtils';
 import { TaskFilter } from '@/features/filterTask/ui';
 
 const mockCallbackOnChengeFunction = jest.fn()
