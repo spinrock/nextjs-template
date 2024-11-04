@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { RootState } from '../../../rootReducer'
 import { Todo } from '../../../entities/task/model/interface'
 import TodoFilter from './components/TodoFilter'
-import TodoItem from './components/TodoItem'
+import { TaskCard } from '@/entities/task/ui';
 
 const TodoList: React.FC = () => {
   const [filterState, setFilterState] = useState<boolean | null>(false)
@@ -19,7 +19,7 @@ const TodoList: React.FC = () => {
     <>
       <TodoFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
       {viewTodoList.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
+        <TaskCard key={todo.id} todo={todo} />
       ))}
     </>
   )

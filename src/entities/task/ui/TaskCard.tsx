@@ -1,23 +1,23 @@
-import React from 'react'
-import { MdCheckBox, MdCheckBoxOutlineBlank, MdDelete } from 'react-icons/md'
-import { useDispatch } from 'react-redux'
-import { Todo } from '../../../../entities/task/model/interface'
-import { deleteTodo, toggleTodo } from '../../../reducer'
+import React from 'react';
+import { MdCheckBox, MdCheckBoxOutlineBlank, MdDelete } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
+import { Todo } from '@/entities/task/model/interface';
+import { deleteTodo, toggleTodo } from '@/Todo/reducer';
 
 type Props = {
   todo: Todo
-}
+};
 
-const TodoItem: React.FC<Props> = ({ todo }: Props) => {
-  const dispatch = useDispatch()
+const TaskCard: React.FC<Props> = ({ todo }: Props) => {
+  const dispatch = useDispatch();
 
   const toggleTodoFunc = () => {
     dispatch(toggleTodo({ id: todo.id }))
-  }
+  };
 
   const deleteTodoFunc = () => {
     dispatch(deleteTodo({ id: todo.id }))
-  }
+  };
 
   return (
     <div className="flex my-2 h-20 shadow-md" data-testid="todoitem-card">
@@ -60,7 +60,7 @@ const TodoItem: React.FC<Props> = ({ todo }: Props) => {
         <MdDelete className="size-6 text-slate-500" />
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default TodoItem
+export default TaskCard;

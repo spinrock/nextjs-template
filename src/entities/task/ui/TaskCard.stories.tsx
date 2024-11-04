@@ -1,19 +1,19 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Provider } from 'react-redux'
-import store from '../../../../rootStore'
-import { Todo } from '../../../../entities/task/model/interface'
-import TodoItem from './TodoItem'
+import type { Meta, StoryObj } from '@storybook/react';
+import { Provider } from 'react-redux';
+import store from '@/rootStore';
+import { Todo } from '@/entities/task/model';
+import { TaskCard } from '@/entities/task/ui';
 
-const meta: Meta<typeof TodoItem> = {
-  title: 'Todo/TodoItem',
-  component: TodoItem,
+const meta: Meta<typeof TaskCard> = {
+  title: 'Task/TaskCard',
+  component: TaskCard,
   tags: ['autodocs'],
   argTypes: {},
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
 }
 
 export default meta
-type Story = StoryObj<typeof TodoItem>
+type Story = StoryObj<typeof TaskCard>
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',

@@ -2,13 +2,13 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom'
-import React from 'react'
-import { Provider } from 'react-redux'
-import store from '../../../../rootStore'
-import { render, screen } from '../../../../test/testUtils'
-import { Todo } from '../../../../entities/task/model/interface'
-import TodoItem from './TodoItem'
+import '@testing-library/jest-dom';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from '../../../rootStore';
+import { render, screen } from '@/test/testUtils';
+import { Todo } from '@/entities/task/model/interface';
+import { TaskCard } from '@/entities/task/ui';
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',
@@ -23,7 +23,7 @@ describe('Common Test', () => {
   beforeEach(() => {
     render(
       <Provider store={store}>
-        <TodoItem todo={dummyTodo} />
+        <TaskCard todo={dummyTodo} />
       </Provider>,
     )
   })
@@ -57,7 +57,7 @@ describe('Completed Todo Test', () => {
   beforeEach(() => {
     render(
       <Provider store={store}>
-        <TodoItem todo={{ ...dummyTodo, completed: true }} />
+        <TaskCard todo={{ ...dummyTodo, completed: true }} />
       </Provider>,
     )
   })
