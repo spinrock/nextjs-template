@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
 import React from 'react';
+import { TasksList } from '@/widget/tasksList';
 import AddTodoBtn from '../../Todo/components/AddTodoBtn';
-import TodoList from '../../Todo/components/TodoList';
 
 const IndexPage: React.FC = () => (
   <div className="md:mx-36 mx-4">
-    <TodoList />
+    <TasksList />
     <AddTodoBtn />
   </div>
 );
