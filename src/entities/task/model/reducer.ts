@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { v4 } from 'uuid';
-import { Todo } from './interface';
-import { sampleTodoList } from '@/Todo/sampleData';
+import type { Todo } from '@/entities/task/model';
+import { sampleTaskList } from '@/entities/task/model/mocks/sampleTask';
 
-const initialState: Todo[] = sampleTodoList;
+const initialState: Todo[] = sampleTaskList;
 
 const todosSlice = createSlice({
   name: 'todos',

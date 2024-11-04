@@ -1,6 +1,6 @@
-import { Todo } from '../entities/task/model/interface'
+import type { Todo } from '@/entities/task/model';
 
-export const sampleTodoList: Todo[] = [
+export const sampleTaskList: Todo[] = [
   {
     id: '0',
     title: 'TechStack',
@@ -33,4 +33,4 @@ export const sampleTodoList: Todo[] = [
     parentTaskId: '0',
     childrenTaskIds: [],
   },
-]
+];
