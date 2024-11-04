@@ -19,7 +19,12 @@
         "name": "next"
       }
     ],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    /* User Defined */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "exclude": ["node_modules", ".next", "out"],
   "include": [
