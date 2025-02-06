@@ -43,7 +43,7 @@ const CreateTaskDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
   }, []);
 
   return (
-    <dialog className=" h-56 w-72 rounded-lg" ref={dialogRef} onClick={closeDialog}>
+    <dialog className=" fixed inset-0 m-auto h-56 w-72 rounded-lg" ref={dialogRef} onClick={closeDialog}>
       <div className="px-4 h-56 w-72" onClick={stopPropagation}>
         <div className="flex justify-center py-4">
           <p className="text-xl">Please Input Todo Property</p>
