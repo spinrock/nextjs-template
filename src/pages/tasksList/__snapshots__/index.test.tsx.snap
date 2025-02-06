@@ -16,7 +16,7 @@ exports[`Home page matches snapshot 1`] = `
         tabindex="0"
       >
         <p
-          class="flex-grow pl-3 leading-[56px]"
+          class="grow pl-3 leading-[56px]"
           data-testid="select-button-title"
         >
           Incompleted
@@ -355,7 +355,7 @@ exports[`Home page matches snapshot 1`] = `
         </svg>
       </button>
       <dialog
-        class=" h-56 w-72 rounded-lg"
+        class=" fixed inset-0 m-auto h-56 w-72 rounded-lg"
       >
         <div
           class="px-4 h-56 w-72"
