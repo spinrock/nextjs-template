@@ -33,7 +33,7 @@ const TaskFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: 
         className=" relative flex w-40 h-14 border-slate-300 border-[1px] rounded-md select-none hover:cursor-pointer hover:border-slate-500"
         onClick={handleClickSelect}
       >
-        <p className="flex-grow pl-3 leading-[56px]" data-testid="select-button-title">
+        <p className="grow pl-3 leading-[56px]" data-testid="select-button-title">
           {menuItemList.find((menuItem) => menuItem.stateValue === filterState)?.menuValue ?? 'ALL'}
         </p>
         {isToggleOpen ? (
