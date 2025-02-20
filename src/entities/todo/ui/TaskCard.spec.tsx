@@ -7,8 +7,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
 import { render, screen } from '@/shared/tests/testUtils';
-import { Todo } from '@/entities/task/model/interface';
-import { TaskCard } from '@/entities/task/ui';
+import { Todo } from '@/entities/todo/model/interface';
+import { TaskCard } from '@/entities/todo/ui';
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import todoReducer from '@/entities/task/model/reducer';
+import todoReducer from '@/entities/todo/model/reducer';
 
 const rootReducer = combineReducers({
   todo: todoReducer,

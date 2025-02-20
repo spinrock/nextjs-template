@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
-import { Todo } from '@/entities/task/model';
-import { TaskCard } from '@/entities/task/ui';
+import { Todo } from '@/entities/todo/model';
+import { TaskCard } from '@/entities/todo/ui';
 
 const meta: Meta<typeof TaskCard> = {
   title: 'Task/TaskCard',

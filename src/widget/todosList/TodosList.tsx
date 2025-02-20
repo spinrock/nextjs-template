@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { TaskFilter } from '@/features/filterTask/ui'; 
-import { TaskCard } from '@/entities/task/ui';
+import { TaskCard } from '@/entities/todo/ui';
 import type { RootState } from '@/app/store';
-import type { Todo } from '@/entities/task/model/interface';
+import type { Todo } from '@/entities/todo/model/interface';
 
 const TasksList: React.FC = () => {
   const [filterState, setFilterState] = useState<boolean | null>(false);

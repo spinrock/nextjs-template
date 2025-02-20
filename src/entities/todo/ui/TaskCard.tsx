@@ -1,8 +1,8 @@
 import React from 'react';
 import { MdCheckBox, MdCheckBoxOutlineBlank, MdDelete } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import { Todo } from '@/entities/task/model/interface';
-import { deleteTodo, toggleTodo } from '@/entities/task/model/reducer';
+import { Todo } from '@/entities/todo/model/interface';
+import { deleteTodo, toggleTodo } from '@/entities/todo/model/reducer';
 
 type Props = {
   todo: Todo

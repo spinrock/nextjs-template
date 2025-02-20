@@ -1,4 +1,4 @@
-import type { Todo } from '@/entities/task/model';
+import type { Todo } from '@/entities/todo/model';
 
 export const sampleTaskList: Todo[] = [
   {

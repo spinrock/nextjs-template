@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo } from '@/entities/task/model/reducer';
+import { addTodo } from '@/entities/todo/model/reducer';
 
 type Props = {
   isOpen: boolean

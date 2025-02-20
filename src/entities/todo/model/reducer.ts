@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { v4 } from 'uuid';
-import type { Todo } from '@/entities/task/model';
-import { sampleTaskList } from '@/entities/task/model/mocks/sampleTask';
+import type { Todo } from '@/entities/todo/model';
+import { sampleTaskList } from '@/entities/todo/model/mocks/sampleTask';
 
 const initialState: Todo[] = sampleTaskList;
 
