@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
-import { TaskFilter } from '@/features/filterTask/ui';
+import { TodoFilter } from '@/features/filterTodo/ui';
 
-const meta: Meta<typeof TaskFilter> = {
-  title: 'Todo/TaskFilter',
-  component: TaskFilter,
+const meta: Meta<typeof TodoFilter> = {
+  title: 'Todo/TodoFilter',
+  component: TodoFilter,
   tags: ['autodocs'],
   argTypes: {
     filterState: {
@@ -17,7 +17,7 @@ const meta: Meta<typeof TaskFilter> = {
 }
 
 export default meta
-type Story = StoryObj<typeof TaskFilter>
+type Story = StoryObj<typeof TodoFilter>
 
 export const Default: Story = {
   args: {

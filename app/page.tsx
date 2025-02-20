@@ -1,6 +1,6 @@
 import React from 'react';
-import TaskListPage from '@/pages/tasksList';
+import TodoListPage from '@/pages/todosList';
 
-const IndexPage: React.FC = () => (<TaskListPage />);
+const IndexPage: React.FC = () => (<TodoListPage />);
 
 export default IndexPage

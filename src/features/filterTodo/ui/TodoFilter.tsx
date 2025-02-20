@@ -12,7 +12,7 @@ type Props = {
   callbackOnChengeFunction: (state: boolean | null) => void
 };
 
-const TaskFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: Props) => {
+const TodoFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: Props) => {
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
   const handleClickSelect = () => {
     setIsToggleOpen(!isToggleOpen);
@@ -61,4 +61,4 @@ const TaskFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: 
   );
 };
 
-export default TaskFilter;
+export default TodoFilter;

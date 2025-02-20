@@ -7,23 +7,23 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
 import { render, screen } from '@/shared/tests/testUtils';
-import { Todo } from '@/entities/task/model/interface';
-import { TaskCard } from '@/entities/task/ui';
+import { Todo } from '@/entities/todo/model/interface';
+import { TodoCard } from '@/entities/todo/ui';
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',
   title: 'Dummy Title',
   description: 'Dummy Description',
   completed: false,
-  parentTaskId: null,
-  childrenTaskIds: [],
+  parentTodoId: null,
+  childrenTodoIds: [],
 }
 
 describe('Common Test', () => {
   beforeEach(() => {
     render(
       <Provider store={rootStore}>
-        <TaskCard todo={dummyTodo} />
+        <TodoCard todo={dummyTodo} />
       </Provider>,
     )
   })
@@ -57,7 +57,7 @@ describe('Completed Todo Test', () => {
   beforeEach(() => {
     render(
       <Provider store={rootStore}>
-        <TaskCard todo={{ ...dummyTodo, completed: true }} />
+        <TodoCard todo={{ ...dummyTodo, completed: true }} />
       </Provider>,
     )
   })

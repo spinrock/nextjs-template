@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { MdAdd } from 'react-icons/md';
-import { CreateTaskDialog } from './';
+import { CreateTodoDialog } from './';
 
-const AddTaskBtn: React.FC = () => {
+const AddTodoBtn: React.FC = () => {
   const [dialogStatus, setDialogStatus] = useState(false);
 
   const openDialog: VoidFunction = () => {
@@ -23,9 +23,9 @@ const AddTaskBtn: React.FC = () => {
       >
         <MdAdd className="size-6" />
       </button>
-      <CreateTaskDialog isOpen={dialogStatus} closeDialog={closeDialog} />
+      <CreateTodoDialog isOpen={dialogStatus} closeDialog={closeDialog} />
     </div>
   );
 };
 
-export default AddTaskBtn;
+export default AddTodoBtn;

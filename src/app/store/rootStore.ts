@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { TodoState } from '@/entities/task/model/store';
+import { TodoState } from '@/entities/todo/model/store';
 import { rootReducer } from './rootReducer';
 
 export type StoreState = {
