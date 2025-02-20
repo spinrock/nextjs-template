@@ -3,6 +3,6 @@ export interface Todo {
   title: string
   description: string
   completed: boolean
-  parentTaskId: string | null
-  childrenTaskIds: string[]
+  parentTodoId: string | null
+  childrenTodoIds: string[]
 }

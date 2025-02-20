@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { v4 } from 'uuid';
 import type { Todo } from '@/entities/todo/model';
-import { sampleTaskList } from '@/entities/todo/model/mocks/sampleTask';
+import { sampleTodoList } from '@/entities/todo/model/mocks/sampleTodo';
 
-const initialState: Todo[] = sampleTaskList;
+const initialState: Todo[] = sampleTodoList;
 
 const todosSlice = createSlice({
   name: 'todos',
@@ -17,8 +17,8 @@ const todosSlice = createSlice({
         title,
         description,
         completed: false,
-        parentTaskId: null,
-        childrenTaskIds: [],
+        parentTodoId: null,
+        childrenTodoIds: [],
       })
     },
     deleteTodo(state, action) {
@@ -28,13 +28,13 @@ const todosSlice = createSlice({
       }
     },
     updateTodo(state, action) {
-      const { id, title, description, parentTaskId, childrenTaskIds } = action.payload
+      const { id, title, description, parentTodoId, childrenTodoIds } = action.payload
       const todo = state.find((todo) => todo.id === id)
       if (todo) {
         todo.title = title ? title : todo.title
         todo.description = description ? description : todo.description
-        todo.parentTaskId = parentTaskId || parentTaskId === null ? parentTaskId : todo.parentTaskId
-        todo.childrenTaskIds = childrenTaskIds ? childrenTaskIds : todo.childrenTaskIds
+        todo.parentTodoId = parentTodoId || parentTodoId === null ? parentTodoId : todo.parentTodoId
+        todo.childrenTodoIds = childrenTodoIds ? childrenTodoIds : todo.childrenTodoIds
       }
     },
     toggleTodo(state, action) {

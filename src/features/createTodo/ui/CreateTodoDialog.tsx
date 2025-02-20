@@ -7,7 +7,7 @@ type Props = {
   closeDialog: VoidFunction
 };
 
-const CreateTaskDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
+const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
@@ -90,4 +90,4 @@ const CreateTaskDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
   );
 };
 
-export default CreateTaskDialog;
+export default CreateTodoDialog;

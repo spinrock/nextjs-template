@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { TaskFilter } from '@/features/filterTask/ui'; 
-import { TaskCard } from '@/entities/todo/ui';
+import { TodoFilter } from '@/features/filterTodo/ui'; 
+import { TodoCard } from '@/entities/todo/ui';
 import type { RootState } from '@/app/store';
 import type { Todo } from '@/entities/todo/model/interface';
 
-const TasksList: React.FC = () => {
+const TodosList: React.FC = () => {
   const [filterState, setFilterState] = useState<boolean | null>(false);
   const todoList: Todo[] = useSelector((state: RootState) => state.todo);
   const viewTodoList =
@@ -17,12 +17,12 @@ const TasksList: React.FC = () => {
 
   return (
     <>
-      <TaskFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
+      <TodoFilter filterState={filterState} callbackOnChengeFunction={callbackFilterState} />
       {viewTodoList.map((todo) => (
-        <TaskCard key={todo.id} todo={todo} />
+        <TodoCard key={todo.id} todo={todo} />
       ))}
     </>
   );
 };
 
-export default TasksList;
+export default TodosList;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MdAdd } from 'react-icons/md';
 import { CreateTodoDialog } from './';
 
-const AddTaskBtn: React.FC = () => {
+const AddTodoBtn: React.FC = () => {
   const [dialogStatus, setDialogStatus] = useState(false);
 
   const openDialog: VoidFunction = () => {
@@ -28,4 +28,4 @@ const AddTaskBtn: React.FC = () => {
   );
 };
 
-export default AddTaskBtn;
+export default AddTodoBtn;

@@ -8,7 +8,7 @@ type Props = {
   todo: Todo
 };
 
-const TaskCard: React.FC<Props> = ({ todo }: Props) => {
+const TodoCard: React.FC<Props> = ({ todo }: Props) => {
   const dispatch = useDispatch();
 
   const toggleTodoFunc = () => {
@@ -63,4 +63,4 @@ const TaskCard: React.FC<Props> = ({ todo }: Props) => {
   );
 };
 
-export default TaskCard;
+export default TodoCard;
