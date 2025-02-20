@@ -6,7 +6,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@/shared/tests/testUtils';
 import { rootStore } from '@/app/store';
-import IndexPage from '@/pages/tasksList';
+import IndexPage from '@/pages/todosList';
 
 describe('Home page', () => {
   it('matches snapshot', () => {

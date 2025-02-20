@@ -8,14 +8,14 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { rootStore } from '@/app/store';
 import { render, screen } from '@/shared/tests/testUtils';
-import TasksList from './TasksList';
+import TodosList from './TodosList';
 import type { Todo } from '@/entities/task/model/interface';
 
 describe('Common Test', () => {
   beforeEach(() => {
     render(
       <Provider store={rootStore}>
-        <TasksList />
+        <TodosList />
       </Provider>,
     );
   });
@@ -41,7 +41,7 @@ describe('Checked Todo Test', () => {
   beforeEach(async () => {
     render(
       <Provider store={rootStore}>
-        <TasksList />
+        <TodosList />
       </Provider>,
     );
 
@@ -87,7 +87,7 @@ describe('Delete Todo Test', () => {
   it('Check TodoList Length', async () => {
     render(
       <Provider store={rootStore}>
-        <TasksList />
+        <TodosList />
       </Provider>,
     );
     await userEvent.click(screen.getByTestId(targetDeleteButtonId));
