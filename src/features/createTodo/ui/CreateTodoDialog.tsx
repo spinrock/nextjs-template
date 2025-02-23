@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '@/entities/todo/model/reducer';
+import { Button } from '@/components/ui/button';
 
 type Props = {
   isOpen: boolean
@@ -69,21 +70,22 @@ const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
           />
         </div>
         <div className="flex gap-3 my-4 justify-center">
-          <button
+          <Button
             type="button"
             disabled={title === ''}
             onClick={addTodoFunc}
-            className="h-10 px-3 rounded-md bg-slate-200 hover:bg-slate-300 disabled:bg-gray-200 disabled:text-gray-400"
+            className="h-10 px-3 rounded-md bg-slate-200 hover:bg-slate-300 disabled:bg-gray-200 disabled:text-gray-400 text-slate-700"
           >
             Create Todo
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
             onClick={closeDialog}
-            className="h-10 px-3 rounded-md text-red-700 hover:bg-red-200"
+            variant="outline"
+            className="h-10 px-3 rounded-md text-red-700 hover:bg-red-200 hover:text-red-800"
           >
             Cancel
-          </button>
+          </Button>
         </div>
       </div>
     </dialog>
