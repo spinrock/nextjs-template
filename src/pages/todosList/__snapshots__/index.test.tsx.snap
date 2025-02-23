@@ -331,12 +331,11 @@ exports[`Home page matches snapshot 1`] = `
     </div>
     <div>
       <button
-        aria-label="add"
-        class="size-12 bg-slate-200 rounded-full z-50 inline-flex justify-center items-center shadow-lg hover:bg-slate-300"
-        type="button"
+        class="gap-2 whitespace-nowrap text-sm font-medium transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground px-4 py-2 has-[>svg]:px-3 size-12 bg-slate-200 rounded-full z-50 inline-flex justify-center items-center shadow-lg hover:bg-slate-300"
+        data-slot="button"
       >
         <svg
-          class="size-6"
+          class="size-6 text-slate-700"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
