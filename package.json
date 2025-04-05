@@ -73,6 +73,6 @@
     "postcss": "^8.4.35",
     "storybook": "^8.0.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   }
 }
