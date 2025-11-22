@@ -7,7 +7,7 @@ module.exports = {
   ],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
   transform: {
-    '^.+\\.(ts|tsx)$': '@swc/jest',
+    '^.+\\.(t|j)sx?$': '@swc/jest',
   },
   watchPlugins: [
     'jest-watch-typeahead/filename',
