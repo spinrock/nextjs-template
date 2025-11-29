@@ -15,7 +15,7 @@
     "test-all": "npm run lint && npm run type-check && npm run test",
     "e2e-test": "playwright test",
     "prepare": "husky",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build"
   },
   "husky": {
