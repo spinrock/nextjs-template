@@ -22,9 +22,7 @@ Next.js with Typescript の個人用テンプレートとなります
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) の --example オプションに本リポジトリ URL を指定します
 
 ```bash
-npx create-next-app <your-app-name> --example https://github.com/spinrock/nextjs-template
-# or
-yarn create next-app <your-app-name> --example https://github.com/spinrock/nextjs-template
+pnpm dlx create-next-app <your-app-name> --example https://github.com/spinrock/nextjs-template
 ```
 
 ## サンプルイメージ
