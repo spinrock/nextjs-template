@@ -41,6 +41,7 @@
     "react-dom": "19.2.0",
     "react-icons": "^5.0.1",
     "react-redux": "9.2.0",
+    "redux": "^5.0.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "uuid": "13.0.0"
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.0.0",
     "@playwright/test": "^1.37.1",
+    "@storybook/addon-docs": "10.1.2",
     "@storybook/addon-links": "10.1.2",
     "@storybook/nextjs": "10.1.2",
     "@storybook/testing-library": "^0.2.0",
@@ -69,7 +71,6 @@
     "postcss": "^8.4.35",
     "storybook": "10.1.2",
     "tailwindcss": "^4.0.0",
-    "typescript": "5.9.3",
-    "@storybook/addon-docs": "10.1.2"
+    "typescript": "5.9.3"
   }
 }
