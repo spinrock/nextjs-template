@@ -1,8 +1,8 @@
-import { ReduxProvider } from '@/app/providers';
-import { CommonPageTemplate } from '@/shared/ui';
-import '@/app/styles/globals.css';
+import { ReduxProvider } from '@/app/providers'
+import { CommonPageTemplate } from '@/shared/ui'
+import '@/app/styles/globals.css'
 
-type RootLayoutProps = React.PropsWithChildren;
+type RootLayoutProps = React.PropsWithChildren
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }: RootLayoutProps) => (
   <html lang="ja">
@@ -14,4 +14,4 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }: RootLayoutProps) =>
   </html>
 )
 
-export default RootLayout;
+export default RootLayout

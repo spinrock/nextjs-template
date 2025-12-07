@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/nextjs';
-import { Provider } from 'react-redux';
-import { rootStore } from '@/app/store';
-import { TodoFilter } from '@/features/filterTodo/ui';
+import type { Meta, StoryObj } from '@storybook/nextjs'
+import { Provider } from 'react-redux'
+import { rootStore } from '@/app/store'
+import { TodoFilter } from '@/features/filterTodo/ui'
 
 const meta: Meta<typeof TodoFilter> = {
   title: 'Todo/TodoFilter',

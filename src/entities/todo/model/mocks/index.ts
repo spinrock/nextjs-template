@@ -1,1 +1,1 @@
-export * from './sampleTodo';
+export * from './sampleTodo'

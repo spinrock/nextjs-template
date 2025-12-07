@@ -2,11 +2,11 @@
  * @jest-environment jsdom
  */
 
-import React from 'react';
-import { Provider } from 'react-redux';
-import { render } from '@/shared/tests/testUtils';
-import { rootStore } from '@/app/store';
-import IndexPage from '@/pages/todosList';
+import React from 'react'
+import { Provider } from 'react-redux'
+import { rootStore } from '@/app/store'
+import IndexPage from '@/pages/todosList'
+import { render } from '@/shared/tests/testUtils'
 
 describe('Home page', () => {
   it('matches snapshot', () => {

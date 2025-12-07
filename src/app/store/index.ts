@@ -1,3 +1,3 @@
-export { default as rootStore } from './rootStore';
-export * from './rootReducer';
-export type * from './rootReducer';
+export type * from './rootReducer'
+export * from './rootReducer'
+export { default as rootStore } from './rootStore'

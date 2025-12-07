@@ -1,50 +1,54 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
-import { useDispatch } from 'react-redux';
-import { addTodo } from '@/entities/todo/model/reducer';
-import { Button } from '@/components/ui/button';
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { Button } from '@/components/ui/button'
+import { addTodo } from '@/entities/todo/model/reducer'
 
 type Props = {
   isOpen: boolean
   closeDialog: VoidFunction
-};
+}
 
 const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const dialogRef = useRef<HTMLDialogElement>(null)
+  const dispatch = useDispatch()
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
 
   useEffect((): void => {
-    const dialogElement = dialogRef.current;
+    const dialogElement = dialogRef.current
     if (!dialogElement) {
-      return;
+      return
     }
     if (isOpen) {
       if (dialogElement.hasAttribute('open')) {
-        return;
+        return
       }
-      dialogElement.showModal();
+      dialogElement.showModal()
     } else {
       if (!dialogElement.hasAttribute('open')) {
-        return;
+        return
       }
-      dialogElement.close();
-    };
-  }, [isOpen]);
+      dialogElement.close()
+    }
+  }, [isOpen])
 
   const addTodoFunc: VoidFunction = () => {
-    dispatch(addTodo({ title: title, description: description }));
-    setTitle('');
-    setDescription('');
-    closeDialog();
-  };
+    dispatch(addTodo({ title: title, description: description }))
+    setTitle('')
+    setDescription('')
+    closeDialog()
+  }
 
   const stopPropagation = useCallback((event: React.MouseEvent<HTMLDivElement>): void => {
-    event.stopPropagation();
-  }, []);
+    event.stopPropagation()
+  }, [])
 
   return (
-    <dialog className=" fixed inset-0 m-auto h-56 w-72 rounded-lg" ref={dialogRef} onClick={closeDialog}>
+    <dialog
+      className=" fixed inset-0 m-auto h-56 w-72 rounded-lg"
+      ref={dialogRef}
+      onClick={closeDialog}
+    >
       <div className="px-4 h-56 w-72" onClick={stopPropagation}>
         <div className="flex justify-center py-4">
           <p className="text-xl">Please Input Todo Property</p>
@@ -89,7 +93,7 @@ const CreateTodoDialog: React.FC<Props> = ({ isOpen, closeDialog }: Props) => {
         </div>
       </div>
     </dialog>
-  );
-};
+  )
+}
 
-export default CreateTodoDialog;
+export default CreateTodoDialog

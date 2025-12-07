@@ -1,6 +1,7 @@
-import { Todo } from '@/entities/todo/model/interface';
-import reducer, { addTodo, toggleTodo, deleteTodo, updateTodo } from '@/entities/todo/model/reducer';
-jest.mock('uuid', () => ({ v4: () => todo01.id }));
+import { Todo } from '@/entities/todo/model/interface'
+import reducer, { addTodo, deleteTodo, toggleTodo, updateTodo } from '@/entities/todo/model/reducer'
+
+jest.mock('uuid', () => ({ v4: () => todo01.id }))
 
 // Sample DataSet
 const todo00: Todo = {

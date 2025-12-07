@@ -1,1 +1,1 @@
-export { metadata as rootMetadata } from './rootMetadata';
+export { metadata as rootMetadata } from './rootMetadata'

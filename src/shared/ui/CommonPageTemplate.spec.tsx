@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
-import React from 'react';
-import CommonPageTemplate from '@/shared/ui/CommonPageTemplate';
+import '@testing-library/jest-dom'
+import { render, screen } from '@testing-library/react'
+import React from 'react'
+import CommonPageTemplate from '@/shared/ui/CommonPageTemplate'
 
 const dummyComponentText = 'Dummy Component'
 
