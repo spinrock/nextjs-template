@@ -1,26 +1,42 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "a11y": {
-        "useKeyWithClickEvents": "off"
-      },
-      "style": {
-        "useImportType": "off"
-      }
-    }
-  },
-  "javascript": {
-    "formatter": {
-      "enabled": true,
-      "quoteStyle": "single",
-      "jsxQuoteStyle": "double",
-      "semicolons": "asNeeded",
-      "indentStyle": "space",
-      "indentWidth": 2,
-      "lineWidth": 100
-    }
-  }
+	"$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+	"files": {
+		"includes": [
+			"**",
+			"!**/*.css",
+			"!**/.next/**",
+			"!**/node_modules/**",
+			"!**/dist/**",
+			"!**/build/**",
+			"!**/*.config.js",
+			"!**/*.config.ts"
+		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"useKeyWithClickEvents": "off",
+				"noStaticElementInteractions": "off"
+			},
+			"style": {
+				"useImportType": "off"
+			},
+			"correctness": {
+				"noUnusedImports": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "double",
+			"semicolons": "asNeeded",
+			"indentStyle": "space",
+			"indentWidth": 2,
+			"lineWidth": 100
+		}
+	}
 }
