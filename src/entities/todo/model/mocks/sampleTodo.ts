@@ -1,4 +1,4 @@
-import type { Todo } from '@/entities/todo/model';
+import type { Todo } from '@/entities/todo/model'
 
 export const sampleTodoList: Todo[] = [
   {
@@ -33,4 +33,4 @@ export const sampleTodoList: Todo[] = [
     parentTodoId: '0',
     childrenTodoIds: [],
   },
-];
+]

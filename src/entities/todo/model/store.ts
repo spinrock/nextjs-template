@@ -1,3 +1,3 @@
-import { Todo } from './interface';
+import { Todo } from './interface'
 
-export type TodoState = Todo[];
+export type TodoState = Todo[]

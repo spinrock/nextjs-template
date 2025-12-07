@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import Link from 'next/link'
+import React from 'react'
 
 const Footer: React.FC = () => (
   <div className="mt-3 h-10 flex justify-center border-t-2 border-slate-200">
@@ -10,6 +10,6 @@ const Footer: React.FC = () => (
       </Link>
     </p>
   </div>
-);
+)
 
-export default Footer;
+export default Footer

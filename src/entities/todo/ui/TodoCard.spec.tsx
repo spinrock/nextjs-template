@@ -2,13 +2,12 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom';
-import React from 'react';
-import { Provider } from 'react-redux';
-import { rootStore } from '@/app/store';
-import { render, screen } from '@/shared/tests/testUtils';
-import { Todo } from '@/entities/todo/model/interface';
-import { TodoCard } from '@/entities/todo/ui';
+import '@testing-library/jest-dom'
+import { Provider } from 'react-redux'
+import { rootStore } from '@/app/store'
+import { Todo } from '@/entities/todo/model/interface'
+import { TodoCard } from '@/entities/todo/ui'
+import { render, screen } from '@/shared/tests/testUtils'
 
 const dummyTodo: Todo = {
   id: 'Dummy Id',

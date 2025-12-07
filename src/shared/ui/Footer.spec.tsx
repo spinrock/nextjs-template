@@ -2,10 +2,9 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
-import React from 'react';
-import Footer from '@/shared/ui/Footer';
+import '@testing-library/jest-dom'
+import { render, screen } from '@testing-library/react'
+import Footer from '@/shared/ui/Footer'
 
 describe('Common Test', () => {
   beforeEach(() => {
