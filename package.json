@@ -9,7 +9,7 @@
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "format": "biome format --write ./src",
-    "lint": "biome check --apply ./src",
+    "lint": "biome check --write ./src",
     "test": "jest",
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\"",
     "test-all": "npm run lint && npm run type-check && npm run test",
