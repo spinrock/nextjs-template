@@ -3,7 +3,6 @@
  */
 
 import '@testing-library/jest-dom'
-import React from 'react'
 import { Provider } from 'react-redux'
 import { rootStore } from '@/app/store'
 import { TodoFilter } from '@/features/filterTodo/ui'

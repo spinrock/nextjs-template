@@ -4,10 +4,9 @@
 
 import '@testing-library/jest-dom'
 import userEvent from '@testing-library/user-event'
-import React from 'react'
 import { Provider } from 'react-redux'
 import { rootStore } from '@/app/store'
-import type { Todo } from '@/entities/task/model/interface'
+import type { Todo } from '@/entities/todo/model/interface'
 import { render, screen } from '@/shared/tests/testUtils'
 import TodosList from './TodosList'
 
