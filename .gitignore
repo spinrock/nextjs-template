@@ -38,3 +38,6 @@ yarn-error.log*
 
 # pnpm
 .pnpm-store
+
+# claude
+.claude/*.local.*
