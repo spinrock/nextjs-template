@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/nextjs';
-import { Provider } from 'react-redux';
-import { rootStore } from '@/app/store';
-import { Todo } from '@/entities/todo/model';
-import { TodoCard } from '@/entities/todo/ui';
+import type { Meta, StoryObj } from '@storybook/nextjs'
+import { Provider } from 'react-redux'
+import { rootStore } from '@/app/store'
+import { Todo } from '@/entities/todo/model'
+import { TodoCard } from '@/entities/todo/ui'
 
 const meta: Meta<typeof TodoCard> = {
   title: 'Todo/TodoCard',

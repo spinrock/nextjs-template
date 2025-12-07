@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md';
+import React, { useState } from 'react'
+import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md'
 
 const menuItemList = [
   { menuValue: 'ALL', stateValue: null },
   { menuValue: 'Incompleted', stateValue: false },
   { menuValue: 'Completed', stateValue: true },
-];
+]
 
 type Props = {
   filterState: boolean | null
   callbackOnChengeFunction: (state: boolean | null) => void
-};
+}
 
 const TodoFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: Props) => {
-  const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
+  const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false)
   const handleClickSelect = () => {
-    setIsToggleOpen(!isToggleOpen);
-  };
+    setIsToggleOpen(!isToggleOpen)
+  }
   const handleClickSelectItem = (menuValue: string) => {
     callbackOnChengeFunction(
       menuItemList.find((menuItem) => menuItem.menuValue === menuValue)?.stateValue ?? null,
-    );
-  };
+    )
+  }
 
   return (
     <div className="flex justify-end">
@@ -58,7 +58,7 @@ const TodoFilter: React.FC<Props> = ({ filterState, callbackOnChengeFunction }: 
         ) : null}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TodoFilter;
+export default TodoFilter

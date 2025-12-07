@@ -2,12 +2,12 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom';
-import React from 'react';
-import { Provider } from 'react-redux';
-import { rootStore } from '@/app/store';
-import { render, screen } from '@/shared/tests/testUtils';
-import { TodoFilter } from '@/features/filterTodo/ui';
+import '@testing-library/jest-dom'
+import React from 'react'
+import { Provider } from 'react-redux'
+import { rootStore } from '@/app/store'
+import { TodoFilter } from '@/features/filterTodo/ui'
+import { render, screen } from '@/shared/tests/testUtils'
 
 const mockCallbackOnChengeFunction = jest.fn()
 

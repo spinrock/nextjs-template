@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { MdAdd } from 'react-icons/md';
-import { CreateTodoDialog } from './';
-import { Button } from '@/components/ui/button';
+import React, { useState } from 'react'
+import { MdAdd } from 'react-icons/md'
+import { Button } from '@/components/ui/button'
+import { CreateTodoDialog } from './'
 
 const AddTodoBtn: React.FC = () => {
-  const [dialogStatus, setDialogStatus] = useState(false);
+  const [dialogStatus, setDialogStatus] = useState(false)
 
   const openDialog: VoidFunction = () => {
-    setDialogStatus(true);
-  };
+    setDialogStatus(true)
+  }
 
   const closeDialog: VoidFunction = () => {
-    setDialogStatus(false);
-  };
+    setDialogStatus(false)
+  }
 
   return (
     <div>
@@ -24,7 +24,7 @@ const AddTodoBtn: React.FC = () => {
       </Button>
       <CreateTodoDialog isOpen={dialogStatus} closeDialog={closeDialog} />
     </div>
-  );
-};
+  )
+}
 
-export default AddTodoBtn;
+export default AddTodoBtn

@@ -1,1 +1,1 @@
-export { default as TodoFilter } from './TodoFilter'; 
+export { default as TodoFilter } from './TodoFilter'
