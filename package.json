@@ -49,9 +49,9 @@
   "devDependencies": {
     "@biomejs/biome": "^2.0.0",
     "@playwright/test": "^1.37.1",
-    "@storybook/addon-docs": "10.1.6",
-    "@storybook/addon-links": "10.1.6",
-    "@storybook/nextjs": "10.1.6",
+    "@storybook/addon-docs": "10.1.7",
+    "@storybook/addon-links": "10.1.7",
+    "@storybook/nextjs": "10.1.7",
     "@storybook/testing-library": "^0.2.0",
     "@swc/jest": "^0.2.24",
     "@tailwindcss/postcss": "^4.0.0",
@@ -69,7 +69,7 @@
     "jest-watch-typeahead": "^3.0.1",
     "lint-staged": "16.2.7",
     "postcss": "^8.4.35",
-    "storybook": "10.1.6",
+    "storybook": "10.1.7",
     "tailwindcss": "^4.0.0",
     "typescript": "5.9.3"
   }
