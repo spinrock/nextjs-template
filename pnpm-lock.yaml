@@ -59,13 +59,13 @@ importers:
         version: 1.61.1
       '@storybook/addon-docs':
         specifier: 10.5.3
-        version: 10.5.3(@types/react@19.2.17)(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+        version: 10.5.3(@types/react@19.2.17)(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       '@storybook/addon-links':
         specifier: 10.5.3
         version: 10.5.3(@types/react@19.2.17)(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@storybook/nextjs':
         specifier: 10.5.3
-        version: 10.5.3(@swc/core@1.15.3)(@types/react@19.2.17)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.11(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.61.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+        version: 10.5.3(@swc/core@1.15.3)(@types/react@19.2.17)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.11(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.61.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       '@storybook/testing-library':
         specifier: ^0.2.0
         version: 0.2.2
@@ -116,7 +116,7 @@ importers:
         version: 17.1.1
       postcss:
         specifier: ^8.4.35
-        version: 8.5.21
+        version: 8.5.22
       storybook:
         specifier: 10.5.3
         version: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -4218,8 +4218,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.21:
-    resolution: {integrity: sha512-v4sDNP3fdNiWMfabO7OwOQdOX8TiQSztKyT1Wj0w+j7LDallJThJRBBBmzVGyYj0crMh7jlV4zepPkiNu9UwDQ==}
+  postcss@8.5.22:
+    resolution: {integrity: sha512-KBDEIpLrvpv16pp3K0Fw+UCoZfopFjjgeB+0tA/aaThfEE74kKDLrgg603YvOWJyg3+WYtyq3xYsQWsIyZlPqQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   pretty-error@4.0.0:
@@ -6623,7 +6623,7 @@ snapshots:
     dependencies:
       playwright: 1.61.1
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.14.2)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.14.2)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))':
     dependencies:
       ansi-html: 0.0.9
       core-js-pure: 3.47.0
@@ -6633,7 +6633,7 @@ snapshots:
       react-refresh: 0.14.2
       schema-utils: 4.3.3
       source-map: 0.7.6
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     optionalDependencies:
       type-fest: 2.19.0
       webpack-hot-middleware: 2.26.1
@@ -6677,10 +6677,10 @@ snapshots:
 
   '@standard-schema/utils@0.3.0': {}
 
-  '@storybook/addon-docs@10.5.3(@types/react@19.2.17)(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))':
+  '@storybook/addon-docs@10.5.3(@types/react@19.2.17)(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))':
     dependencies:
       '@mdx-js/react': 3.1.1(@types/react@19.2.17)(react@19.2.8)
-      '@storybook/csf-plugin': 10.5.3(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      '@storybook/csf-plugin': 10.5.3(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       '@storybook/icons': 2.0.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@storybook/react-dom-shim': 10.5.3(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       react: 19.2.8
@@ -6704,23 +6704,23 @@ snapshots:
       '@types/react': 19.2.17
       react: 19.2.8
 
-  '@storybook/builder-webpack5@10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)':
+  '@storybook/builder-webpack5@10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)':
     dependencies:
       '@storybook/core-webpack': 10.5.3(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       case-sensitive-paths-webpack-plugin: 2.4.0
       cjs-module-lexer: 1.4.3
-      css-loader: 7.1.2(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      css-loader: 7.1.2(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       es-module-lexer: 1.7.0
-      fork-ts-checker-webpack-plugin: 9.1.0(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
-      html-webpack-plugin: 5.6.5(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      fork-ts-checker-webpack-plugin: 9.1.0(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
+      html-webpack-plugin: 5.6.5(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       magic-string: 0.30.21
       semver: 7.7.3
       storybook: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      style-loader: 4.0.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
-      terser-webpack-plugin: 5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      style-loader: 4.0.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
+      terser-webpack-plugin: 5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       ts-dedent: 2.2.0
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
-      webpack-dev-middleware: 6.1.3(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
+      webpack-dev-middleware: 6.1.3(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       webpack-hot-middleware: 2.26.1
       webpack-virtual-modules: 0.6.2
     optionalDependencies:
@@ -6746,13 +6746,13 @@ snapshots:
       storybook: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       ts-dedent: 2.2.0
 
-  '@storybook/csf-plugin@10.5.3(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))':
+  '@storybook/csf-plugin@10.5.3(esbuild@0.27.1)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))':
     dependencies:
       storybook: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       unplugin: 2.3.11
     optionalDependencies:
       esbuild: 0.27.1
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   '@storybook/global@5.0.0': {}
 
@@ -6761,7 +6761,7 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  '@storybook/nextjs@10.5.3(@swc/core@1.15.3)(@types/react@19.2.17)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.11(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.61.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))':
+  '@storybook/nextjs@10.5.3(@swc/core@1.15.3)(@types/react@19.2.17)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.11(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.61.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))':
     dependencies:
       '@babel/core': 7.28.5(supports-color@8.1.1)
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.28.5(supports-color@8.1.1))
@@ -6776,34 +6776,34 @@ snapshots:
       '@babel/preset-react': 7.28.5(@babel/core@7.28.5(supports-color@8.1.1))(supports-color@8.1.1)
       '@babel/preset-typescript': 7.28.5(@babel/core@7.28.5(supports-color@8.1.1))(supports-color@8.1.1)
       '@babel/runtime': 7.29.7
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.14.2)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
-      '@storybook/builder-webpack5': 10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
-      '@storybook/preset-react-webpack': 10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(react-refresh@0.14.2)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
+      '@storybook/builder-webpack5': 10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
+      '@storybook/preset-react-webpack': 10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)
       '@storybook/react': 10.5.3(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)
       '@types/semver': 7.7.1
-      babel-loader: 9.2.1(@babel/core@7.28.5(supports-color@8.1.1))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
-      css-loader: 6.11.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      babel-loader: 9.2.1(@babel/core@7.28.5(supports-color@8.1.1))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
+      css-loader: 6.11.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       image-size: 2.0.2
       loader-utils: 3.3.1
       next: 16.2.11(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.61.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      node-polyfill-webpack-plugin: 2.0.1(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
-      postcss: 8.5.21
-      postcss-loader: 8.2.0(postcss@8.5.21)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      node-polyfill-webpack-plugin: 2.0.1(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
+      postcss: 8.5.22
+      postcss-loader: 8.2.0(postcss@8.5.22)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       react-refresh: 0.14.2
       resolve-url-loader: 5.0.0
-      sass-loader: 16.0.6(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      sass-loader: 16.0.6(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       semver: 7.7.3
       storybook: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      style-loader: 3.3.4(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      style-loader: 3.3.4(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       styled-jsx: 5.1.7(@babel/core@7.28.5(supports-color@8.1.1))(react@19.2.8)
       tsconfig-paths: 4.2.0
       tsconfig-paths-webpack-plugin: 4.2.0
     optionalDependencies:
       '@types/react': 19.2.17
       typescript: 6.0.3
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@rspack/core'
@@ -6830,10 +6830,10 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@storybook/preset-react-webpack@10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)':
+  '@storybook/preset-react-webpack@10.5.3(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)':
     dependencies:
       '@storybook/core-webpack': 10.5.3(storybook@10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
-      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(supports-color@8.1.1)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(supports-color@8.1.1)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       '@types/semver': 7.7.1
       magic-string: 0.30.21
       react: 19.2.8
@@ -6843,7 +6843,7 @@ snapshots:
       semver: 7.7.3
       storybook: 10.5.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       tsconfig-paths: 4.2.0
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     optionalDependencies:
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -6862,7 +6862,7 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(supports-color@8.1.1)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))':
+  '@storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0(supports-color@8.1.1)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))':
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
       endent: 2.1.0
@@ -6872,7 +6872,7 @@ snapshots:
       react-docgen-typescript: 2.4.0(typescript@6.0.3)
       tslib: 2.8.1
       typescript: 6.0.3
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     transitivePeerDependencies:
       - supports-color
 
@@ -7034,7 +7034,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
-      postcss: 8.5.21
+      postcss: 8.5.22
       tailwindcss: 4.3.3
 
   '@testing-library/dom@10.4.1':
@@ -7485,12 +7485,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@9.2.1(@babel/core@7.28.5(supports-color@8.1.1))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  babel-loader@9.2.1(@babel/core@7.28.5(supports-color@8.1.1))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       '@babel/core': 7.28.5(supports-color@8.1.1)
       find-cache-dir: 4.0.0
       schema-utils: 4.3.3
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   babel-plugin-istanbul@7.0.1(supports-color@8.1.1):
     dependencies:
@@ -7841,31 +7841,31 @@ snapshots:
       randombytes: 2.1.0
       randomfill: 1.0.4
 
-  css-loader@6.11.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  css-loader@6.11.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.21)
-      postcss: 8.5.21
-      postcss-modules-extract-imports: 3.1.0(postcss@8.5.21)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.5.21)
-      postcss-modules-scope: 3.2.1(postcss@8.5.21)
-      postcss-modules-values: 4.0.0(postcss@8.5.21)
+      icss-utils: 5.1.0(postcss@8.5.22)
+      postcss: 8.5.22
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.22)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.22)
+      postcss-modules-scope: 3.2.1(postcss@8.5.22)
+      postcss-modules-values: 4.0.0(postcss@8.5.22)
       postcss-value-parser: 4.2.0
       semver: 7.7.3
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
-  css-loader@7.1.2(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  css-loader@7.1.2(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.21)
-      postcss: 8.5.21
-      postcss-modules-extract-imports: 3.1.0(postcss@8.5.21)
-      postcss-modules-local-by-default: 4.2.0(postcss@8.5.21)
-      postcss-modules-scope: 3.2.1(postcss@8.5.21)
-      postcss-modules-values: 4.0.0(postcss@8.5.21)
+      icss-utils: 5.1.0(postcss@8.5.22)
+      postcss: 8.5.22
+      postcss-modules-extract-imports: 3.1.0(postcss@8.5.22)
+      postcss-modules-local-by-default: 4.2.0(postcss@8.5.22)
+      postcss-modules-scope: 3.2.1(postcss@8.5.22)
+      postcss-modules-values: 4.0.0(postcss@8.5.22)
       postcss-value-parser: 4.2.0
       semver: 7.7.3
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   css-select@4.3.0:
     dependencies:
@@ -8229,7 +8229,7 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
-  fork-ts-checker-webpack-plugin@9.1.0(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  fork-ts-checker-webpack-plugin@9.1.0(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       '@babel/code-frame': 7.29.7
       chalk: 4.1.2
@@ -8244,7 +8244,7 @@ snapshots:
       semver: 7.7.3
       tapable: 2.3.3
       typescript: 6.0.3
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   fs-extra@10.1.0:
     dependencies:
@@ -8381,7 +8381,7 @@ snapshots:
       relateurl: 0.2.7
       terser: 5.48.0
 
-  html-webpack-plugin@5.6.5(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  html-webpack-plugin@5.6.5(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -8389,7 +8389,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.3.3
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   htmlparser2@6.1.0:
     dependencies:
@@ -8422,9 +8422,9 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  icss-utils@5.1.0(postcss@8.5.21):
+  icss-utils@5.1.0(postcss@8.5.22):
     dependencies:
-      postcss: 8.5.21
+      postcss: 8.5.22
 
   identity-obj-proxy@3.0.0:
     dependencies:
@@ -9281,7 +9281,7 @@ snapshots:
 
   node-int64@0.4.0: {}
 
-  node-polyfill-webpack-plugin@2.0.1(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  node-polyfill-webpack-plugin@2.0.1(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       assert: 2.1.0
       browserify-zlib: 0.2.0
@@ -9308,7 +9308,7 @@ snapshots:
       url: 0.11.4
       util: 0.12.5
       vm-browserify: 1.1.2
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   node-releases@2.0.50: {}
 
@@ -9527,37 +9527,37 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-loader@8.2.0(postcss@8.5.21)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  postcss-loader@8.2.0(postcss@8.5.22)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       cosmiconfig: 9.0.0(typescript@6.0.3)
       jiti: 2.7.0
-      postcss: 8.5.21
+      postcss: 8.5.22
       semver: 7.7.3
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     transitivePeerDependencies:
       - typescript
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.5.21):
+  postcss-modules-extract-imports@3.1.0(postcss@8.5.22):
     dependencies:
-      postcss: 8.5.21
+      postcss: 8.5.22
 
-  postcss-modules-local-by-default@4.2.0(postcss@8.5.21):
+  postcss-modules-local-by-default@4.2.0(postcss@8.5.22):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.21)
-      postcss: 8.5.21
+      icss-utils: 5.1.0(postcss@8.5.22)
+      postcss: 8.5.22
       postcss-selector-parser: 7.1.1
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.1(postcss@8.5.21):
+  postcss-modules-scope@3.2.1(postcss@8.5.22):
     dependencies:
-      postcss: 8.5.21
+      postcss: 8.5.22
       postcss-selector-parser: 7.1.1
 
-  postcss-modules-values@4.0.0(postcss@8.5.21):
+  postcss-modules-values@4.0.0(postcss@8.5.22):
     dependencies:
-      icss-utils: 5.1.0(postcss@8.5.21)
-      postcss: 8.5.21
+      icss-utils: 5.1.0(postcss@8.5.22)
+      postcss: 8.5.22
 
   postcss-selector-parser@7.1.1:
     dependencies:
@@ -9572,7 +9572,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.21:
+  postcss@8.5.22:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -9791,7 +9791,7 @@ snapshots:
       adjust-sourcemap-loader: 4.0.0
       convert-source-map: 1.9.0
       loader-utils: 2.0.4
-      postcss: 8.5.21
+      postcss: 8.5.22
       source-map: 0.6.1
 
   resolve@1.22.11:
@@ -9825,11 +9825,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.6(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  sass-loader@16.0.6(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   saxes@6.0.0:
     dependencies:
@@ -10075,13 +10075,13 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  style-loader@3.3.4(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  style-loader@3.3.4(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
-  style-loader@4.0.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  style-loader@4.0.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   styled-jsx@5.1.6(@babel/core@7.28.5(supports-color@8.1.1))(react@19.2.8):
     dependencies:
@@ -10123,20 +10123,20 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  terser-webpack-plugin@5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  terser-webpack-plugin@5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
     optionalDependencies:
       '@swc/core': 1.15.3
       clean-css: 5.3.3
       esbuild: 0.27.1
       html-minifier-terser: 6.1.0
       lightningcss: 1.32.0
-      postcss: 8.5.21
+      postcss: 8.5.22
 
   terser@5.48.0:
     dependencies:
@@ -10323,7 +10323,7 @@ snapshots:
 
   webidl-conversions@7.0.0: {}
 
-  webpack-dev-middleware@6.1.3(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)):
+  webpack-dev-middleware@6.1.3(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)):
     dependencies:
       colorette: 2.0.20
       memfs: 3.5.3
@@ -10331,7 +10331,7 @@ snapshots:
       range-parser: 1.2.1
       schema-utils: 4.3.3
     optionalDependencies:
-      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)
+      webpack: 5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)
 
   webpack-hot-middleware@2.26.1:
     dependencies:
@@ -10343,7 +10343,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21):
+  webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -10367,7 +10367,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.21))
+      terser-webpack-plugin: 5.6.1(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.22))
       watchpack: 2.5.2
       webpack-sources: 3.5.0
     transitivePeerDependencies:
