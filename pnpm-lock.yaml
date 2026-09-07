@@ -25,7 +25,7 @@ importers:
         version: 1.41.0(react@19.2.8)
       next:
         specifier: 16.2.12
-        version: 16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.62.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.63.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -56,7 +56,7 @@ importers:
         version: 2.5.12
       '@playwright/test':
         specifier: ^1.37.1
-        version: 1.62.1
+        version: 1.63.0
       '@storybook/addon-docs':
         specifier: 10.6.0
         version: 10.6.0(@types/react@19.2.18)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
@@ -65,7 +65,7 @@ importers:
         version: 10.6.0(@types/react@19.2.18)(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@storybook/nextjs':
         specifier: 10.6.0
-        version: 10.6.0(@swc/core@1.15.3)(@types/react@19.2.18)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.62.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
+        version: 10.6.0(@swc/core@1.15.3)(@types/react@19.2.18)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.63.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
       '@storybook/testing-library':
         specifier: ^0.2.0
         version: 0.2.2
@@ -1744,8 +1744,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@playwright/test@1.62.1':
-    resolution: {integrity: sha512-DTcUc8qii+cpHvtOwggMtBRMjKZHXYWdw8syRYu2vtzuq4Wxphqq4NfCs5Zt44L6mA8rfDfj+PHnxFc/FeK6mQ==}
+  '@playwright/test@1.63.0':
+    resolution: {integrity: sha512-oxMK4vllB9RK5NQ2l1pq1IfOf2AvnEuj/vYGDj0H2nMtmtZpKtCwt/l00GEO6xjGfpBNAvjovvYdCm50dRQkpQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3278,11 +3278,6 @@ packages:
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -4320,13 +4315,13 @@ packages:
     resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
     engines: {node: '>=14.16'}
 
-  playwright-core@1.62.1:
-    resolution: {integrity: sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==}
+  playwright-core@1.63.0:
+    resolution: {integrity: sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==}
     engines: {node: '>=20'}
     hasBin: true
 
-  playwright@1.62.1:
-    resolution: {integrity: sha512-0M+L3LAD8/nm554LOla9Ayx0j0tmFZ0FBcoQ7F1VuVHpM/XpiC8RcDzBQB8W5+hA8L22THxELzeF+2WcUzvcLg==}
+  playwright@1.63.0:
+    resolution: {integrity: sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -6871,9 +6866,9 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@playwright/test@1.62.1':
+  '@playwright/test@1.63.0':
     dependencies:
-      playwright: 1.62.1
+      playwright: 1.63.0
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.14.2)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))':
     dependencies:
@@ -7001,7 +6996,7 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  '@storybook/nextjs@10.6.0(@swc/core@1.15.3)(@types/react@19.2.18)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.62.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))':
+  '@storybook/nextjs@10.6.0(@swc/core@1.15.3)(@types/react@19.2.18)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.63.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))':
     dependencies:
       '@babel/core': 7.28.5(supports-color@8.1.1)
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.28.5(supports-color@8.1.1))
@@ -7024,7 +7019,7 @@ snapshots:
       babel-loader: 9.2.1(@babel/core@7.28.5(supports-color@8.1.1))(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
       css-loader: 6.11.0(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
       loader-utils: 3.3.1
-      next: 16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.62.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      next: 16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.63.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       node-polyfill-webpack-plugin: 2.0.1(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
       postcss: 8.5.28
       postcss-loader: 8.2.0(postcss@8.5.28)(typescript@6.0.3)(webpack@5.103.0(@swc/core@1.15.3)(clean-css@5.3.3)(esbuild@0.27.1)(html-minifier-terser@6.1.0)(lightningcss@1.32.0)(postcss@8.5.28))
@@ -8541,9 +8536,6 @@ snapshots:
 
   fs.realpath@1.0.0: {}
 
-  fsevents@2.3.2:
-    optional: true
-
   function-bind@1.1.2: {}
 
   functions-have-names@1.2.3: {}
@@ -9560,7 +9552,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.62.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  next@16.2.12(@babel/core@7.28.5(supports-color@8.1.1))(@playwright/test@1.63.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@next/env': 16.2.12
       '@swc/helpers': 0.5.15
@@ -9579,7 +9571,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.2.12
       '@next/swc-win32-arm64-msvc': 16.2.12
       '@next/swc-win32-x64-msvc': 16.2.12
-      '@playwright/test': 1.62.1
+      '@playwright/test': 1.63.0
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -9833,13 +9825,11 @@ snapshots:
     dependencies:
       find-up: 6.3.0
 
-  playwright-core@1.62.1: {}
+  playwright-core@1.63.0: {}
 
-  playwright@1.62.1:
+  playwright@1.63.0:
     dependencies:
-      playwright-core: 1.62.1
-    optionalDependencies:
-      fsevents: 2.3.2
+      playwright-core: 1.63.0
 
   possible-typed-array-names@1.1.0: {}
 
