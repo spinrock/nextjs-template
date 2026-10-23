@@ -1,2 +1,6 @@
-onlyBuiltDependencies:
-  - '@swc/core'
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  core-js-pure: false
+  esbuild: true
+  unrs-resolver: false
