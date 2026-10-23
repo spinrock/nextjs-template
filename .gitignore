@@ -40,4 +40,5 @@ yarn-error.log*
 .pnpm-store
 
 # claude
-.claude/*.local.*next-env.d.ts
+.claude/*.local.*
+next-env.d.ts
