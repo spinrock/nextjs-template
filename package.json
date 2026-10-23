@@ -36,7 +36,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.0.0",
-    "next": "16.2.12",
+    "next": "16.4.2",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "react-icons": "^5.0.1",
@@ -72,5 +72,6 @@
     "storybook": "10.6.2",
     "tailwindcss": "^4.0.0",
     "typescript": "6.0.3"
-  }
+  },
+  "packageManager": "pnpm@10.34.7+sha512.ba98abc585539933375b5971f4bc6d6c73a1b4b7edc4a879e7d102fe5423d1e02309d67c60a11f04955093a96e521ad9c3b138cdd654ca5be563f378b3ae48bd"
 }
